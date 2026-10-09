@@ -350,11 +350,14 @@
     renderLinks(data);
   }
 
-  fetch("./data.json")
-    .then((r) => {
-      if (!r.ok) throw new Error(`Failed to load data.json (${r.status})`);
-      return r.json();
-    })
+  // Single-file build inlines window.DASHBOARD_DATA; the hosted build fetches data.json.
+  (window.DASHBOARD_DATA
+    ? Promise.resolve(window.DASHBOARD_DATA)
+    : fetch("./data.json").then((r) => {
+        if (!r.ok) throw new Error(`Failed to load data.json (${r.status})`);
+        return r.json();
+      })
+  )
     .then(renderAll)
     .catch((err) => {
       const main = document.querySelector("main");
@@ -363,4 +366,110 @@
       banner.textContent = `Could not load coaching data: ${err.message}`;
       main.prepend(banner);
     });
+})();
+
+/* —— Navigation: scroll-spy, active states, mobile section title —— */
+(function () {
+  "use strict";
+
+  const SECTIONS = [
+    { id: "overview", label: "Overview", tab: "home" },
+    { id: "goals", label: "Goals", tab: "home" },
+    { id: "cup-results", label: "Cup Results", tab: "cup" },
+    { id: "cup-schedule", label: "Cup Schedule", tab: "cup" },
+    { id: "kansas", label: "Kansas Debrief", tab: "plans" },
+    { id: "qualcomm", label: "Qualcomm Plan", tab: "plans" },
+    { id: "trucks", label: "Trucks", tab: "trucks" },
+    { id: "links", label: "Links", tab: "more" },
+  ];
+
+  const sectionEls = SECTIONS.map((s) => document.getElementById(s.id)).filter(Boolean);
+  const navItems = Array.from(document.querySelectorAll(".nav-item[data-section]"));
+  const tabs = Array.from(document.querySelectorAll(".tab[data-tab]"));
+  const currentLabel = document.getElementById("current-section");
+  const mobileBar = document.querySelector(".mobile-bar");
+  const mobileMq = window.matchMedia("(max-width: 899.98px)");
+
+  let activeId = null;
+  let lockUntil = 0;
+
+  function setActive(id) {
+    if (!id || id === activeId) return;
+    activeId = id;
+    const meta = SECTIONS.find((s) => s.id === id);
+    navItems.forEach((a) => {
+      if (a.dataset.section === id) a.setAttribute("aria-current", "location");
+      else a.removeAttribute("aria-current");
+    });
+    tabs.forEach((t) => {
+      if (meta && t.dataset.tab === meta.tab) t.setAttribute("aria-current", "location");
+      else t.removeAttribute("aria-current");
+    });
+    if (currentLabel && meta) currentLabel.textContent = meta.label;
+  }
+
+  function topOffset() {
+    return mobileMq.matches && mobileBar ? mobileBar.offsetHeight + 24 : 32;
+  }
+
+  function computeActive() {
+    if (Date.now() < lockUntil) return;
+    const doc = document.documentElement;
+    if (window.innerHeight + window.scrollY >= doc.scrollHeight - 4) {
+      setActive(sectionEls[sectionEls.length - 1].id);
+      return;
+    }
+    const line = topOffset();
+    let current = sectionEls[0];
+    for (const el of sectionEls) {
+      if (el.getBoundingClientRect().top - line <= 0) current = el;
+      else break;
+    }
+    setActive(current.id);
+  }
+
+  let raf = 0;
+  function schedule() {
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      raf = 0;
+      computeActive();
+    });
+  }
+
+  if ("IntersectionObserver" in window) {
+    // A thin band near the top of the viewport; any section crossing it changes the active item.
+    const io = new IntersectionObserver(schedule, {
+      rootMargin: "-80px 0px -60% 0px",
+      threshold: [0, 0.25, 0.5, 0.75, 1],
+    });
+    sectionEls.forEach((el) => io.observe(el));
+    // Short final sections may never reach the band; watch the footer for end-of-page.
+    const footer = document.querySelector(".footer");
+    if (footer) new IntersectionObserver(schedule, { threshold: [0, 1] }).observe(footer);
+  }
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule);
+
+  // Clicking a nav item: mark it active immediately and pause the spy while the smooth scroll runs.
+  document.querySelectorAll(".nav-item, .tab").forEach((a) => {
+    a.addEventListener("click", () => {
+      const id = (a.getAttribute("href") || "").replace("#", "");
+      if (!document.getElementById(id)) return;
+      lockUntil = 0;
+      setActive(id);
+      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      lockUntil = Date.now() + (reduce ? 150 : 900);
+    });
+  });
+  if ("onscrollend" in window) {
+    window.addEventListener("scrollend", () => {
+      lockUntil = 0;
+      schedule();
+    });
+  }
+
+  const initial = location.hash.replace("#", "");
+  setActive(SECTIONS.some((s) => s.id === initial) ? initial : "overview");
+  schedule();
 })();
