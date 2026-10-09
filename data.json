@@ -1,1209 +1,3025 @@
 {
- "updated": "2026-10-09",
- "driver": {
-  "name": "Jake M Johnson",
-  "custid": "1078383",
-  "driver_id": "122055",
-  "display": "Jake Johnson",
-  "garage61_slug": "jake-johnson-2",
-  "oval": "A 3.50 / ~1769 iR",
-  "teams": [
-   "FishSpeed",
-   "Florida Man Racing",
-   "VRN Garage"
-  ]
- },
- "cup": {
-  "season_id": "30123",
-  "season_name": "Season 16",
-  "series_name": "Bonfire Premier Cup",
-  "summary": {
-   "position": 19,
-   "points": 247.0,
-   "starts": 9,
-   "avg_finish": 15.3,
-   "avg_quali": 16.1,
-   "top10s": 2,
-   "total_incidents": 33,
-   "best_finish": 6,
-   "chase_cutoff": 12,
-   "gap_to_p12_points": 34.0,
-   "gap_to_p12_positions": 7,
-   "p12_points": 281.0,
-   "p12_driver": "Brenner, David",
-   "note": "SimRacerHub Season 16 as of 2026-10-04: P19, 247 pts (34 behind P12 Brenner, David). Qualcomm race_id 383208 scored (Q8\u2192P12, 0x, +31 pts)."
+  "updated": "2026-10-09",
+  "driver": {
+    "name": "Jake M Johnson",
+    "custid": "1078383",
+    "driver_id": "122055",
+    "display": "Jake Johnson",
+    "garage61_slug": "jake-johnson-2",
+    "oval": "A 3.50 / ~1769 iR",
+    "teams": [
+      "FishSpeed",
+      "Florida Man Racing",
+      "VRN Garage"
+    ]
   },
-  "results": [
-   {
-    "race_id": "367670",
-    "event": "Dennis Puckett Memorial 250 at Kentucky",
-    "date": "2026-07-19",
-    "chase": "N",
-    "quali": 26,
-    "finish": 21,
-    "incidents": 0,
-    "points": 22.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 65.5
-   },
-   {
-    "race_id": "369202",
-    "event": "Indianapolis Motor Speedway",
-    "date": "2026-07-26",
-    "chase": "N",
-    "quali": 11,
-    "finish": 16,
-    "incidents": 1,
-    "points": 26.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 77.6
-   },
-   {
-    "race_id": "370784",
-    "event": "Auto Club Speedway",
-    "date": "2026-08-02",
-    "chase": "N",
-    "quali": 24,
-    "finish": 14,
-    "incidents": 0,
-    "points": 30.0,
-    "laps_led": 6,
-    "status": "Running",
-    "rating": 87.1
-   },
-   {
-    "race_id": "372264",
-    "event": "Iowa Speedway",
-    "date": "2026-08-09",
-    "chase": "N",
-    "quali": 29,
-    "finish": 17,
-    "incidents": 8,
-    "points": 25.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 68.9
-   },
-   {
-    "race_id": "375123",
-    "event": "New Hampshire Motor Speedway",
-    "date": "2026-08-23",
-    "chase": "N",
-    "quali": 16,
-    "finish": 19,
-    "incidents": 10,
-    "points": 23.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 64.6
-   },
-   {
-    "race_id": "376548",
-    "event": "Daytona International Speedway",
-    "date": "2026-08-30",
-    "chase": "N",
-    "quali": 2,
-    "finish": 10,
-    "incidents": 10,
-    "points": 33.0,
-    "laps_led": 1,
-    "status": "Running",
-    "rating": 87.6
-   },
-   {
-    "race_id": "379028",
-    "event": "World Wide Technology Raceway (Gateway)",
-    "date": "2026-09-13",
-    "chase": "N",
-    "quali": 15,
-    "finish": 23,
-    "incidents": 4,
-    "points": 19.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 82.0
-   },
-   {
-    "race_id": "381888",
-    "event": "Kansas",
-    "date": "2026-09-27",
-    "chase": "N",
-    "quali": 14,
-    "finish": 6,
-    "incidents": 0,
-    "points": 38.0,
-    "laps_led": 3,
-    "status": "Running",
-    "rating": 80.9
-   },
-   {
-    "race_id": "383208",
-    "event": "Qualcomm Circuit",
-    "date": "2026-10-04",
-    "chase": "N",
-    "quali": 8,
-    "finish": 12,
-    "incidents": 0,
-    "points": 31.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 82.7
-   }
-  ],
-  "schedule": [
-   {
-    "date": "2026-07-19",
-    "event": "Dennis Puckett Memorial 250 at Kentucky",
-    "chase": false,
-    "race_id": "367670",
-    "result": {
-     "race_id": "367670",
-     "event": "Dennis Puckett Memorial 250 at Kentucky",
-     "date": "2026-07-19",
-     "chase": "N",
-     "quali": 26,
-     "finish": 21,
-     "incidents": 0,
-     "points": 22.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 65.5
-    },
-    "track_hint": "Kentucky Speedway"
-   },
-   {
-    "date": "2026-07-26",
-    "event": "Indianapolis Motor Speedway",
-    "chase": false,
-    "race_id": "369202",
-    "result": {
-     "race_id": "369202",
-     "event": "Indianapolis Motor Speedway",
-     "date": "2026-07-26",
-     "chase": "N",
-     "quali": 11,
-     "finish": 16,
-     "incidents": 1,
-     "points": 26.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 77.6
-    }
-   },
-   {
-    "date": "2026-08-02",
-    "event": "Auto Club Speedway",
-    "chase": false,
-    "race_id": "370784",
-    "result": {
-     "race_id": "370784",
-     "event": "Auto Club Speedway",
-     "date": "2026-08-02",
-     "chase": "N",
-     "quali": 24,
-     "finish": 14,
-     "incidents": 0,
-     "points": 30.0,
-     "laps_led": 6,
-     "status": "Running",
-     "rating": 87.1
-    }
-   },
-   {
-    "date": "2026-08-09",
-    "event": "Iowa Speedway",
-    "chase": false,
-    "race_id": "372264",
-    "result": {
-     "race_id": "372264",
-     "event": "Iowa Speedway",
-     "date": "2026-08-09",
-     "chase": "N",
-     "quali": 29,
-     "finish": 17,
-     "incidents": 8,
-     "points": 25.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 68.9
-    }
-   },
-   {
-    "date": "2026-08-16",
-    "event": "Richmond Raceway",
-    "chase": false,
-    "race_id": "373608",
-    "result": null
-   },
-   {
-    "date": "2026-08-23",
-    "event": "New Hampshire Motor Speedway",
-    "chase": false,
-    "race_id": "375123",
-    "result": {
-     "race_id": "375123",
-     "event": "New Hampshire Motor Speedway",
-     "date": "2026-08-23",
-     "chase": "N",
-     "quali": 16,
-     "finish": 19,
-     "incidents": 10,
-     "points": 23.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 64.6
-    }
-   },
-   {
-    "date": "2026-08-30",
-    "event": "Daytona International Speedway",
-    "chase": false,
-    "race_id": "376548",
-    "result": {
-     "race_id": "376548",
-     "event": "Daytona International Speedway",
-     "date": "2026-08-30",
-     "chase": "N",
-     "quali": 2,
-     "finish": 10,
-     "incidents": 10,
-     "points": 33.0,
-     "laps_led": 1,
-     "status": "Running",
-     "rating": 87.6
-    }
-   },
-   {
-    "date": "2026-09-13",
-    "event": "World Wide Technology Raceway (Gateway)",
-    "chase": false,
-    "race_id": "379028",
-    "result": {
-     "race_id": "379028",
-     "event": "World Wide Technology Raceway (Gateway)",
-     "date": "2026-09-13",
-     "chase": "N",
-     "quali": 15,
-     "finish": 23,
-     "incidents": 4,
-     "points": 19.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 82.0
-    }
-   },
-   {
-    "date": "2026-09-20",
-    "event": "Bristol Motor Speedway",
-    "chase": false,
-    "race_id": "380373",
-    "result": null
-   },
-   {
-    "date": "2026-09-27",
-    "event": "Kansas",
-    "chase": false,
-    "race_id": "381888",
-    "result": {
-     "race_id": "381888",
-     "event": "Kansas",
-     "date": "2026-09-27",
-     "chase": "N",
-     "quali": 14,
-     "finish": 6,
-     "incidents": 0,
-     "points": 38.0,
-     "laps_led": 3,
-     "status": "Running",
-     "rating": 80.9
-    },
-    "track_hint": "Kansas Speedway"
-   },
-   {
-    "date": "2026-10-04",
-    "event": "Qualcomm Circuit",
-    "chase": false,
-    "race_id": "383208",
-    "result": {
-     "race_id": "383208",
-     "event": "Qualcomm Circuit",
-     "date": "2026-10-04",
-     "chase": "N",
-     "quali": 8,
-     "finish": 12,
-     "incidents": 0,
-     "points": 31.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 82.7
-    },
-    "track_hint": "Qualcomm Circuit (Naval Base Coronado)"
-   },
-   {
-    "date": "2026-10-11",
-    "event": "Charlotte Motor Speedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-10-18",
-    "event": "Phoenix Raceway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-10-25",
-    "event": "Las Vegas Motor Speedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-01",
-    "event": "Round 1",
-    "chase": true,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-01",
-    "event": "EchoPark Speedway (Atlanta)",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-08",
-    "event": "Homestead Miami Speedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-15",
-    "event": "Round 2",
-    "chase": true,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-15",
-    "event": "Michigan International Speedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-11-22",
-    "event": "Nashville Superspeedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-12-06",
-    "event": "Championship Round",
-    "chase": true,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-12-06",
-    "event": "Chicagoland Speedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-12-13",
-    "event": "Darlington Raceway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   },
-   {
-    "date": "2026-12-20",
-    "event": "Talladega Superspeedway",
-    "chase": false,
-    "race_id": null,
-    "result": null
-   }
-  ]
- },
- "trucks": {
-  "season_id": "29499",
-  "season_name": "Season 14",
-  "series_name": "Big Trucking Tuesday",
-  "summary": {
-   "position": 27,
-   "starts": 16,
-   "points": 154.0,
-   "avg_finish": 21.6,
-   "avg_quali": 19.9,
-   "top10s": 0,
-   "total_incidents": 101,
-   "best_finish": 11,
-   "note": "Season 14 complete \u2014 no trucks race this weekend; next slate 2026-10-13 Kentucky."
-  },
-  "results": [
-   {
-    "race_id": "356760",
-    "event": "Season Opener - The Ultimate Custom Cabinets 225",
-    "date": "2026-05-19",
-    "chase": "N",
-    "quali": 17,
-    "finish": 14,
-    "incidents": 0,
-    "points": 19.0,
-    "laps_led": 2,
-    "status": "Running",
-    "rating": 82.0
-   },
-   {
-    "race_id": "357842",
-    "event": "Regular Season - Round 2",
-    "date": "2026-05-26",
-    "chase": "N",
-    "quali": 19,
-    "finish": 23,
-    "incidents": 19,
-    "points": 8.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 60.0
-   },
-   {
-    "race_id": "359169",
-    "event": "Regular Season - Round 3",
-    "date": "2026-06-02",
-    "chase": "N",
-    "quali": 28,
-    "finish": 24,
-    "incidents": 2,
-    "points": 7.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 59.1
-   },
-   {
-    "race_id": "360424",
-    "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
-    "date": "2026-06-09",
-    "chase": "N",
-    "quali": 28,
-    "finish": 15,
-    "incidents": 8,
-    "points": 16.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 70.7
-   },
-   {
-    "race_id": "361730",
-    "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
-    "date": "2026-06-16",
-    "chase": "N",
-    "quali": 18,
-    "finish": 11,
-    "incidents": 2,
-    "points": 20.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 73.5
-   },
-   {
-    "race_id": "362856",
-    "event": "Regular Season - Round 6",
-    "date": "2026-06-23",
-    "chase": "N",
-    "quali": 17,
-    "finish": 14,
-    "incidents": 4,
-    "points": 17.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 76.7
-   },
-   {
-    "race_id": "365008",
-    "event": "Regular Season - Round 8",
-    "date": "2026-07-07",
-    "chase": "N",
-    "quali": 19,
-    "finish": 29,
-    "incidents": 0,
-    "points": 2.0,
-    "laps_led": 0,
-    "status": "Disconnected",
-    "rating": 66.5
-   },
-   {
-    "race_id": "366570",
-    "event": "Regular Season - Round 9",
-    "date": "2026-07-14",
-    "chase": "N",
-    "quali": 18,
-    "finish": 22,
-    "incidents": 5,
-    "points": 9.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 64.1
-   },
-   {
-    "race_id": "368101",
-    "event": "Regular Season - Round 10",
-    "date": "2026-07-21",
-    "chase": "N",
-    "quali": 24,
-    "finish": 22,
-    "incidents": 0,
-    "points": 10.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 68.6
-   },
-   {
-    "race_id": "369668",
-    "event": "Regular Season - Round 11",
-    "date": "2026-07-28",
-    "chase": "N",
-    "quali": 22,
-    "finish": 23,
-    "incidents": 13,
-    "points": 8.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 57.5
-   },
-   {
-    "race_id": "371564",
-    "event": "Regular Season - Round 12",
-    "date": "2026-08-04",
-    "chase": "N",
-    "quali": 23,
-    "finish": 19,
-    "incidents": 4,
-    "points": 12.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 60.1
-   },
-   {
-    "race_id": "372731",
-    "event": "Regular Season Finale",
-    "date": "2026-08-11",
-    "chase": "N",
-    "quali": 16,
-    "finish": 26,
-    "incidents": 16,
-    "points": 5.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 60.5
-   },
-   {
-    "race_id": "375822",
-    "event": "Round Of 12 - Round 14",
-    "date": "2026-08-25",
-    "chase": "N",
-    "quali": 21,
-    "finish": 19,
-    "incidents": 4,
-    "points": 12.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 71.1
-   },
-   {
-    "race_id": "377064",
-    "event": "Round Of 12 Cut Off Race - Round 15",
-    "date": "2026-09-01",
-    "chase": "N",
-    "quali": 27,
-    "finish": 29,
-    "incidents": 4,
-    "points": 2.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 50.7
-   },
-   {
-    "race_id": "378243",
-    "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
-    "date": "2026-09-08",
-    "chase": "N",
-    "quali": 8,
-    "finish": 31,
-    "incidents": 8,
-    "points": 1.0,
-    "laps_led": 0,
-    "status": "Disconnected",
-    "rating": 50.7
-   },
-   {
-    "race_id": "380888",
-    "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
-    "date": "2026-09-22",
-    "chase": "N",
-    "quali": 13,
-    "finish": 25,
-    "incidents": 12,
-    "points": 6.0,
-    "laps_led": 0,
-    "status": "Running",
-    "rating": 68.7
-   }
-  ],
-  "schedule": [
-   {
-    "date": "2026-05-19",
-    "event": "Season Opener - The Ultimate Custom Cabinets 225",
-    "chase": false,
-    "race_id": "356760",
-    "result": {
-     "race_id": "356760",
-     "event": "Season Opener - The Ultimate Custom Cabinets 225",
-     "date": "2026-05-19",
-     "chase": "N",
-     "quali": 17,
-     "finish": 14,
-     "incidents": 0,
-     "points": 19.0,
-     "laps_led": 2,
-     "status": "Running",
-     "rating": 82.0
-    }
-   },
-   {
-    "date": "2026-05-26",
-    "event": "Regular Season - Round 2",
-    "chase": false,
-    "race_id": "357842",
-    "result": {
-     "race_id": "357842",
-     "event": "Regular Season - Round 2",
-     "date": "2026-05-26",
-     "chase": "N",
-     "quali": 19,
-     "finish": 23,
-     "incidents": 19,
-     "points": 8.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 60.0
-    }
-   },
-   {
-    "date": "2026-06-02",
-    "event": "Regular Season - Round 3",
-    "chase": false,
-    "race_id": "359169",
-    "result": {
-     "race_id": "359169",
-     "event": "Regular Season - Round 3",
-     "date": "2026-06-02",
-     "chase": "N",
-     "quali": 28,
-     "finish": 24,
-     "incidents": 2,
-     "points": 7.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 59.1
-    }
-   },
-   {
-    "date": "2026-06-09",
-    "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
-    "chase": false,
-    "race_id": "360424",
-    "result": {
-     "race_id": "360424",
-     "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
-     "date": "2026-06-09",
-     "chase": "N",
-     "quali": 28,
-     "finish": 15,
-     "incidents": 8,
-     "points": 16.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 70.7
-    }
-   },
-   {
-    "date": "2026-06-16",
-    "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
-    "chase": false,
-    "race_id": "361730",
-    "result": {
-     "race_id": "361730",
-     "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
-     "date": "2026-06-16",
-     "chase": "N",
-     "quali": 18,
-     "finish": 11,
-     "incidents": 2,
-     "points": 20.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 73.5
-    }
-   },
-   {
-    "date": "2026-06-23",
-    "event": "Regular Season - Round 6",
-    "chase": false,
-    "race_id": "362856",
-    "result": {
-     "race_id": "362856",
-     "event": "Regular Season - Round 6",
-     "date": "2026-06-23",
-     "chase": "N",
-     "quali": 17,
-     "finish": 14,
-     "incidents": 4,
-     "points": 17.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 76.7
-    }
-   },
-   {
-    "date": "2026-06-30",
-    "event": "Regular Season - Round 7",
-    "chase": false,
-    "race_id": "364547",
-    "result": null
-   },
-   {
-    "date": "2026-07-07",
-    "event": "Regular Season - Round 8",
-    "chase": false,
-    "race_id": "365008",
-    "result": {
-     "race_id": "365008",
-     "event": "Regular Season - Round 8",
-     "date": "2026-07-07",
-     "chase": "N",
-     "quali": 19,
-     "finish": 29,
-     "incidents": 0,
-     "points": 2.0,
-     "laps_led": 0,
-     "status": "Disconnected",
-     "rating": 66.5
-    }
-   },
-   {
-    "date": "2026-07-14",
-    "event": "Regular Season - Round 9",
-    "chase": false,
-    "race_id": "366570",
-    "result": {
-     "race_id": "366570",
-     "event": "Regular Season - Round 9",
-     "date": "2026-07-14",
-     "chase": "N",
-     "quali": 18,
-     "finish": 22,
-     "incidents": 5,
-     "points": 9.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 64.1
-    }
-   },
-   {
-    "date": "2026-07-21",
-    "event": "Regular Season - Round 10",
-    "chase": false,
-    "race_id": "368101",
-    "result": {
-     "race_id": "368101",
-     "event": "Regular Season - Round 10",
-     "date": "2026-07-21",
-     "chase": "N",
-     "quali": 24,
-     "finish": 22,
-     "incidents": 0,
-     "points": 10.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 68.6
-    }
-   },
-   {
-    "date": "2026-07-28",
-    "event": "Regular Season - Round 11",
-    "chase": false,
-    "race_id": "369668",
-    "result": {
-     "race_id": "369668",
-     "event": "Regular Season - Round 11",
-     "date": "2026-07-28",
-     "chase": "N",
-     "quali": 22,
-     "finish": 23,
-     "incidents": 13,
-     "points": 8.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 57.5
-    }
-   },
-   {
-    "date": "2026-08-04",
-    "event": "Regular Season - Round 12",
-    "chase": false,
-    "race_id": "371564",
-    "result": {
-     "race_id": "371564",
-     "event": "Regular Season - Round 12",
-     "date": "2026-08-04",
-     "chase": "N",
-     "quali": 23,
-     "finish": 19,
-     "incidents": 4,
-     "points": 12.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 60.1
-    }
-   },
-   {
-    "date": "2026-08-11",
-    "event": "Regular Season Finale",
-    "chase": false,
-    "race_id": "372731",
-    "result": {
-     "race_id": "372731",
-     "event": "Regular Season Finale",
-     "date": "2026-08-11",
-     "chase": "N",
-     "quali": 16,
-     "finish": 26,
-     "incidents": 16,
-     "points": 5.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 60.5
-    }
-   },
-   {
-    "date": "2026-08-21",
-    "event": "Play-Offs - Round of 12",
-    "chase": true,
-    "race_id": "374458",
-    "result": null
-   },
-   {
-    "date": "2026-08-25",
-    "event": "Round Of 12 - Round 14",
-    "chase": false,
-    "race_id": "375822",
-    "result": {
-     "race_id": "375822",
-     "event": "Round Of 12 - Round 14",
-     "date": "2026-08-25",
-     "chase": "N",
-     "quali": 21,
-     "finish": 19,
-     "incidents": 4,
-     "points": 12.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 71.1
-    }
-   },
-   {
-    "date": "2026-09-01",
-    "event": "Round Of 12 Cut Off Race - Round 15",
-    "chase": false,
-    "race_id": "377064",
-    "result": {
-     "race_id": "377064",
-     "event": "Round Of 12 Cut Off Race - Round 15",
-     "date": "2026-09-01",
-     "chase": "N",
-     "quali": 27,
-     "finish": 29,
-     "incidents": 4,
-     "points": 2.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 50.7
-    }
-   },
-   {
-    "date": "2026-09-02",
-    "event": "Play-Offs - Round of 8",
-    "chase": true,
-    "race_id": "377147",
-    "result": null
-   },
-   {
-    "date": "2026-09-08",
-    "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
-    "chase": false,
-    "race_id": "378243",
-    "result": {
-     "race_id": "378243",
-     "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
-     "date": "2026-09-08",
-     "chase": "N",
-     "quali": 8,
-     "finish": 31,
-     "incidents": 8,
-     "points": 1.0,
-     "laps_led": 0,
-     "status": "Disconnected",
-     "rating": 50.7
-    }
-   },
-   {
-    "date": "2026-09-15",
-    "event": "Round Of 8 Cut-Off - Round 17",
-    "chase": false,
-    "race_id": "379598",
-    "result": null
-   },
-   {
-    "date": "2026-09-16",
-    "event": "Championship 4",
-    "chase": true,
-    "race_id": "379600",
-    "result": null
-   },
-   {
-    "date": "2026-09-22",
-    "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
-    "chase": false,
-    "race_id": "380888",
-    "result": {
-     "race_id": "380888",
-     "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
-     "date": "2026-09-22",
-     "chase": "N",
-     "quali": 13,
-     "finish": 25,
-     "incidents": 12,
-     "points": 6.0,
-     "laps_led": 0,
-     "status": "Running",
-     "rating": 68.7
-    }
-   }
-  ]
- },
- "coaching": {
-  "goals": {
-   "cup": "Top-12 playoff (now P19, 34 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
-   "trucks": "Season 14 done \u2014 next season starts Oct 13 Kentucky; no trucks race this weekend. Aim clean car, mid-pack+ finishes."
-  },
-  "pillars": [
-   "Qualifying",
-   "Short-track craft",
-   "Incident discipline",
-   "Attendance"
-  ],
-  "weekly_rhythm": [
-   "Mon\u2013Tue: technique",
-   "Wed: Garage61 delta work",
-   "Thu: pace / fuel",
-   "Fri: traffic + race-week brief",
-   "Sat: light quali",
-   "Sun: race + post-review"
-  ],
-  "kansas": {
-   "date": "2026-09-27",
-   "series": "Bonfire Premier Cup",
-   "reported": "SRH Q14 \u2192 P6, 0x, +38 pts (3 laps led); coach: late pace + pit strategy (had ~Q15)",
-   "garage61": {
-    "best": "29.897",
-    "optimal": "29.667",
-    "clean_pct": "92% (143/156)",
-    "quali_best": "29.973",
-    "note": "S2 was the main lap-time leak vs earlier clean laps"
-   },
-   "setup": "3:15 ratio, 15/16 front arb, 7/8 rear, 44.6% BB",
-   "strengths": [
-    "Race craft / patience",
-    "Clean car",
-    "Late-run speed",
-    "Race pace > quali peak"
-   ],
-   "gaps": [
-    "Quali grid (started ~15)",
-    "S2 exit / mid-corner",
-    "~0.23s to optimal",
-    "Early stint slower than late"
-   ],
-   "simracerhub": {
-    "race_id": "381888",
-    "quali": 14,
-    "finish": 6,
-    "incidents": 0,
-    "points": 38.0,
-    "laps_led": 3,
-    "rating": 80.9
-   }
-  },
-  "qualcomm": {
-   "race_date": "2026-10-04",
-   "track": "Qualcomm Circuit (Naval Base Coronado) \u2014 3.4 mi, 16-turn street course",
-   "targets": "Top-15 quali, mid-teens+ finish, under 4x",
-   "focus": "Brake \u2192 rotate \u2192 throttle; T2\u20133 90\u00b0 lefts; Carrier Corner (T5); Coronado Chicane (T8\u20139); final chicane",
-   "practice_plan": [
-    {
-     "day": "Wed",
-     "mins": "60\u201375",
-     "focus": "Learn lap + T2\u20133 brake\u2192rotate\u2192throttle; mark boards; ghost best clean"
-    },
-    {
-     "day": "Thu",
-     "mins": "75\u201390",
-     "focus": "Coronado Chicane rhythm, Carrier Corner exit, final chicane; log 5-lap avg"
-    },
-    {
-     "day": "Fri",
-     "mins": "60\u201375",
-     "focus": "20\u201325 lap race stint + traffic; short pit practice; tag Garage61; race-week brief"
-    },
-    {
-     "day": "Sat",
-     "mins": "45\u201360",
-     "focus": "Light quali \u2014 2\u20133 flyers + short race-sim; stop early if sharp"
-    },
-    {
-     "day": "Sun",
-     "mins": "race",
-     "focus": "Qualcomm Cup race + immediate post-review notes"
-    }
-   ],
-   "race_week": {
-    "fri": "Traffic + race-week brief (this brief)",
-    "sat": "Light quali \u2014 2\u20133 flyers, short race-sim, stop early if sharp",
-    "sun": "Race day + post-review"
-   },
-   "reported": "SRH Q8 \u2192 P12, 0x, +31 pts; awaiting Jake debrief / Garage61",
-   "simracerhub": {
-    "race_id": "383208",
-    "quali": 8,
-    "finish": 12,
-    "incidents": 0,
-    "points": 31.0,
-    "laps_led": 0,
-    "rating": 82.7
-   },
-   "fuel_start_pct": 55,
-   "status": "race complete \u2014 coach debrief pending"
-  },
-  "trucks_next": {
-   "next_race": "2026-10-13 Kentucky",
-   "this_weekend": false,
-   "slate": [
-    "Kentucky",
-    "Daytona",
-    "North Wilkesboro",
-    "Charlotte",
-    "Indy Brickyard",
-    "Nashville SS",
-    "bye Thanksgiving",
-    "Michigan",
-    "Iowa"
-   ],
-   "note": "Big Trucking Tuesday Season 14 complete (P27, 16 starts, 0 top-10s, 101 incidents). No trucks race this weekend. New slate starts 2026-10-13 Kentucky (typically 7 / 7:50 PM CST)."
-  },
-  "links": {
-   "garage61": "https://garage61.net/app/drivers/jake-johnson-2",
-   "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
-   "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=29499"
-  },
-  "weekly_focus": "Post-Qualcomm (2026-10-04): Q8\u2192P12, 0x, +31 pts. Cup P19 / 247 pts \u2014 34 behind playoff cut (P12 Brenner, David). Next: Charlotte 2026-10-11. Trucks off until 2026-10-13 Kentucky.",
-  "next_cup": {
-   "race_date": "2026-10-11",
-   "track": "Charlotte Motor Speedway",
-   "targets": "Top-15 quali, mid-teens+ finish, under 4x",
-   "note": "Next Cup after Qualcomm \u2014 oval reset; lock fuel from bible (over 1 mile \u2192 70%)."
-  },
-  "fuel": {
-   "updated": "2026-10-04",
-   "notes": "League fuel windows confirmed by Jake 2026-10-04. Percent is start fuel.",
-   "cup": {
+  "cup": {
     "season_id": "30123",
-    "series": "Bonfire Premier Cup",
-    "jake_typical_car_id": "116",
-    "rules": {
-     "road_and_short_under_1_mile": "55%",
-     "tracks_over_1_mile": "70%"
+    "season_name": "Season 16",
+    "series_name": "Bonfire Premier Cup",
+    "summary": {
+      "position": 18,
+      "points": 247.0,
+      "starts": 9,
+      "avg_finish": 15.3,
+      "avg_quali": 16.1,
+      "top10s": 2,
+      "total_incidents": 33,
+      "best_finish": 6,
+      "chase_cutoff": 12,
+      "gap_to_p12_points": 34.0,
+      "gap_to_p12_positions": 6,
+      "p12_points": 281.0,
+      "p12_driver": "Brenner, David",
+      "note": "SimRacerHub Season 16 as of 2026-10-04: P19, 247 pts (34 behind P12 Brenner, David). Qualcomm race_id 383208 scored (Q8→P12, 0x, +31 pts)."
     },
-    "tracks": {
-     "qualcomm_circuit": {
-      "fuel_start_pct": 55,
-      "rule": "road course",
-      "confirmed": "2026-10-04"
-     },
-     "kansas": {
-      "fuel_start_pct": 70,
-      "rule": "over 1 mile",
-      "confirmed": "2026-10-04"
-     }
-    }
-   },
-   "trucks": {
-    "series": "Big Trucking Tuesday",
-    "jake_typical_car_id": "105",
-    "tracks": {
-     "talladega": {
-      "fuel_start_pct": 78,
-      "confirmed": "2026-10-04"
-     },
-     "homestead": {
-      "fuel_start_pct": 78,
-      "confirmed": "2026-10-04"
-     },
-     "rockingham": {
-      "fuel_start_pct": 55,
-      "confirmed": "2026-10-04"
-     },
-     "indianapolis": {
-      "fuel_start_pct": 78,
-      "confirmed": "2026-10-04"
-     },
-     "new_hampshire": {
-      "fuel_start_pct": 78,
-      "confirmed": "2026-10-04"
-     }
-    }
-   }
-  },
-  "race_week_brief_2026_10_09": {
-   "cup": {
-    "race": "Charlotte, Sun Oct 11",
-    "fuel": "70% if oval (>1 mi); 55% if Roval",
-    "targets": {
-     "quali": "top 12",
-     "finish": "top 10",
-     "incidents": "0-2x (chase 0x bonus)"
-    },
-    "practice": [
-     "Long-run tire falloff over 15+ laps",
-     "Entry to T1/T3 without overslowing",
-     "Restart launches and lane choice"
+    "results": [
+      {
+        "race_id": "367670",
+        "event": "Dennis Puckett Memorial 250 at Kentucky",
+        "date": "2026-07-19",
+        "chase": "N",
+        "quali": 26,
+        "finish": 21,
+        "incidents": 0,
+        "points": 22.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 65.5
+      },
+      {
+        "race_id": "369202",
+        "event": "Indianapolis Motor Speedway",
+        "date": "2026-07-26",
+        "chase": "N",
+        "quali": 11,
+        "finish": 16,
+        "incidents": 1,
+        "points": 26.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 77.6
+      },
+      {
+        "race_id": "370784",
+        "event": "Auto Club Speedway",
+        "date": "2026-08-02",
+        "chase": "N",
+        "quali": 24,
+        "finish": 14,
+        "incidents": 0,
+        "points": 30.0,
+        "laps_led": 6,
+        "status": "Running",
+        "rating": 87.1
+      },
+      {
+        "race_id": "372264",
+        "event": "Iowa Speedway",
+        "date": "2026-08-09",
+        "chase": "N",
+        "quali": 29,
+        "finish": 17,
+        "incidents": 8,
+        "points": 25.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 68.9
+      },
+      {
+        "race_id": "375123",
+        "event": "New Hampshire Motor Speedway",
+        "date": "2026-08-23",
+        "chase": "N",
+        "quali": 16,
+        "finish": 19,
+        "incidents": 10,
+        "points": 23.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 64.6
+      },
+      {
+        "race_id": "376548",
+        "event": "Daytona International Speedway",
+        "date": "2026-08-30",
+        "chase": "N",
+        "quali": 2,
+        "finish": 10,
+        "incidents": 10,
+        "points": 33.0,
+        "laps_led": 1,
+        "status": "Running",
+        "rating": 87.6
+      },
+      {
+        "race_id": "379028",
+        "event": "World Wide Technology Raceway (Gateway)",
+        "date": "2026-09-13",
+        "chase": "N",
+        "quali": 15,
+        "finish": 23,
+        "incidents": 4,
+        "points": 19.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 82.0
+      },
+      {
+        "race_id": "381888",
+        "event": "Kansas",
+        "date": "2026-09-27",
+        "chase": "N",
+        "quali": 14,
+        "finish": 6,
+        "incidents": 0,
+        "points": 38.0,
+        "laps_led": 3,
+        "status": "Running",
+        "rating": 80.9
+      },
+      {
+        "race_id": "383208",
+        "event": "Qualcomm Circuit",
+        "date": "2026-10-04",
+        "chase": "N",
+        "quali": 8,
+        "finish": 12,
+        "incidents": 0,
+        "points": 31.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 82.7
+      }
     ],
-    "cue": "Stay in file to the S/F line on restarts"
-   },
-   "trucks": {
-    "race": "Kentucky 150 laps, Tue Oct 13 (Dennis Puckett 225 crown jewel, 5 tire sets)",
-    "target": "under 5x, finish all laps"
-   },
-   "playoff": "9 of 14 starts; Charlotte start clinches eligibility; ~34 pts back of cut"
+    "schedule": [
+      {
+        "date": "2026-07-19",
+        "event": "Dennis Puckett Memorial 250 at Kentucky",
+        "chase": false,
+        "race_id": "367670",
+        "result": {
+          "race_id": "367670",
+          "event": "Dennis Puckett Memorial 250 at Kentucky",
+          "date": "2026-07-19",
+          "chase": "N",
+          "quali": 26,
+          "finish": 21,
+          "incidents": 0,
+          "points": 22.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 65.5
+        },
+        "track_hint": "Kentucky Speedway"
+      },
+      {
+        "date": "2026-07-26",
+        "event": "Indianapolis Motor Speedway",
+        "chase": false,
+        "race_id": "369202",
+        "result": {
+          "race_id": "369202",
+          "event": "Indianapolis Motor Speedway",
+          "date": "2026-07-26",
+          "chase": "N",
+          "quali": 11,
+          "finish": 16,
+          "incidents": 1,
+          "points": 26.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 77.6
+        }
+      },
+      {
+        "date": "2026-08-02",
+        "event": "Auto Club Speedway",
+        "chase": false,
+        "race_id": "370784",
+        "result": {
+          "race_id": "370784",
+          "event": "Auto Club Speedway",
+          "date": "2026-08-02",
+          "chase": "N",
+          "quali": 24,
+          "finish": 14,
+          "incidents": 0,
+          "points": 30.0,
+          "laps_led": 6,
+          "status": "Running",
+          "rating": 87.1
+        }
+      },
+      {
+        "date": "2026-08-09",
+        "event": "Iowa Speedway",
+        "chase": false,
+        "race_id": "372264",
+        "result": {
+          "race_id": "372264",
+          "event": "Iowa Speedway",
+          "date": "2026-08-09",
+          "chase": "N",
+          "quali": 29,
+          "finish": 17,
+          "incidents": 8,
+          "points": 25.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 68.9
+        }
+      },
+      {
+        "date": "2026-08-16",
+        "event": "Richmond Raceway",
+        "chase": false,
+        "race_id": "373608",
+        "result": null
+      },
+      {
+        "date": "2026-08-23",
+        "event": "New Hampshire Motor Speedway",
+        "chase": false,
+        "race_id": "375123",
+        "result": {
+          "race_id": "375123",
+          "event": "New Hampshire Motor Speedway",
+          "date": "2026-08-23",
+          "chase": "N",
+          "quali": 16,
+          "finish": 19,
+          "incidents": 10,
+          "points": 23.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 64.6
+        }
+      },
+      {
+        "date": "2026-08-30",
+        "event": "Daytona International Speedway",
+        "chase": false,
+        "race_id": "376548",
+        "result": {
+          "race_id": "376548",
+          "event": "Daytona International Speedway",
+          "date": "2026-08-30",
+          "chase": "N",
+          "quali": 2,
+          "finish": 10,
+          "incidents": 10,
+          "points": 33.0,
+          "laps_led": 1,
+          "status": "Running",
+          "rating": 87.6
+        }
+      },
+      {
+        "date": "2026-09-13",
+        "event": "World Wide Technology Raceway (Gateway)",
+        "chase": false,
+        "race_id": "379028",
+        "result": {
+          "race_id": "379028",
+          "event": "World Wide Technology Raceway (Gateway)",
+          "date": "2026-09-13",
+          "chase": "N",
+          "quali": 15,
+          "finish": 23,
+          "incidents": 4,
+          "points": 19.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 82.0
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "event": "Bristol Motor Speedway",
+        "chase": false,
+        "race_id": "380373",
+        "result": null
+      },
+      {
+        "date": "2026-09-27",
+        "event": "Kansas",
+        "chase": false,
+        "race_id": "381888",
+        "result": {
+          "race_id": "381888",
+          "event": "Kansas",
+          "date": "2026-09-27",
+          "chase": "N",
+          "quali": 14,
+          "finish": 6,
+          "incidents": 0,
+          "points": 38.0,
+          "laps_led": 3,
+          "status": "Running",
+          "rating": 80.9
+        },
+        "track_hint": "Kansas Speedway"
+      },
+      {
+        "date": "2026-10-04",
+        "event": "Qualcomm Circuit",
+        "chase": false,
+        "race_id": "383208",
+        "result": {
+          "race_id": "383208",
+          "event": "Qualcomm Circuit",
+          "date": "2026-10-04",
+          "chase": "N",
+          "quali": 8,
+          "finish": 12,
+          "incidents": 0,
+          "points": 31.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 82.7
+        },
+        "track_hint": "Qualcomm Circuit (Naval Base Coronado)"
+      },
+      {
+        "date": "2026-10-11",
+        "event": "Charlotte Motor Speedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-10-18",
+        "event": "Phoenix Raceway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-10-25",
+        "event": "Las Vegas Motor Speedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-01",
+        "event": "Round 1",
+        "chase": true,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-01",
+        "event": "EchoPark Speedway (Atlanta)",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-08",
+        "event": "Homestead Miami Speedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-15",
+        "event": "Round 2",
+        "chase": true,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-15",
+        "event": "Michigan International Speedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-11-22",
+        "event": "Nashville Superspeedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-12-06",
+        "event": "Championship Round",
+        "chase": true,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-12-06",
+        "event": "Chicagoland Speedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-12-13",
+        "event": "Darlington Raceway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      },
+      {
+        "date": "2026-12-20",
+        "event": "Talladega Superspeedway",
+        "chase": false,
+        "race_id": null,
+        "result": null
+      }
+    ]
+  },
+  "trucks": {
+    "season_id": "29499",
+    "season_name": "Season 14",
+    "series_name": "Big Trucking Tuesday",
+    "summary": {
+      "position": 25,
+      "starts": 16,
+      "points": 154.0,
+      "avg_finish": 21.6,
+      "avg_quali": 19.9,
+      "top10s": 0,
+      "total_incidents": 101,
+      "best_finish": 11,
+      "note": "Season 14 complete — no trucks race this weekend; next slate 2026-10-13 Kentucky."
+    },
+    "results": [
+      {
+        "race_id": "356760",
+        "event": "Season Opener - The Ultimate Custom Cabinets 225",
+        "date": "2026-05-19",
+        "chase": "N",
+        "quali": 17,
+        "finish": 14,
+        "incidents": 0,
+        "points": 19.0,
+        "laps_led": 2,
+        "status": "Running",
+        "rating": 82.0
+      },
+      {
+        "race_id": "357842",
+        "event": "Regular Season - Round 2",
+        "date": "2026-05-26",
+        "chase": "N",
+        "quali": 19,
+        "finish": 23,
+        "incidents": 19,
+        "points": 8.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 60.0
+      },
+      {
+        "race_id": "359169",
+        "event": "Regular Season - Round 3",
+        "date": "2026-06-02",
+        "chase": "N",
+        "quali": 28,
+        "finish": 24,
+        "incidents": 2,
+        "points": 7.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 59.1
+      },
+      {
+        "race_id": "360424",
+        "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
+        "date": "2026-06-09",
+        "chase": "N",
+        "quali": 28,
+        "finish": 15,
+        "incidents": 8,
+        "points": 16.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 70.7
+      },
+      {
+        "race_id": "361730",
+        "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
+        "date": "2026-06-16",
+        "chase": "N",
+        "quali": 18,
+        "finish": 11,
+        "incidents": 2,
+        "points": 20.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 73.5
+      },
+      {
+        "race_id": "362856",
+        "event": "Regular Season - Round 6",
+        "date": "2026-06-23",
+        "chase": "N",
+        "quali": 17,
+        "finish": 14,
+        "incidents": 4,
+        "points": 17.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 76.7
+      },
+      {
+        "race_id": "365008",
+        "event": "Regular Season - Round 8",
+        "date": "2026-07-07",
+        "chase": "N",
+        "quali": 19,
+        "finish": 29,
+        "incidents": 0,
+        "points": 2.0,
+        "laps_led": 0,
+        "status": "Disconnected",
+        "rating": 66.5
+      },
+      {
+        "race_id": "366570",
+        "event": "Regular Season - Round 9",
+        "date": "2026-07-14",
+        "chase": "N",
+        "quali": 18,
+        "finish": 22,
+        "incidents": 5,
+        "points": 9.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 64.1
+      },
+      {
+        "race_id": "368101",
+        "event": "Regular Season - Round 10",
+        "date": "2026-07-21",
+        "chase": "N",
+        "quali": 24,
+        "finish": 22,
+        "incidents": 0,
+        "points": 10.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 68.6
+      },
+      {
+        "race_id": "369668",
+        "event": "Regular Season - Round 11",
+        "date": "2026-07-28",
+        "chase": "N",
+        "quali": 22,
+        "finish": 23,
+        "incidents": 13,
+        "points": 8.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 57.5
+      },
+      {
+        "race_id": "371564",
+        "event": "Regular Season - Round 12",
+        "date": "2026-08-04",
+        "chase": "N",
+        "quali": 23,
+        "finish": 19,
+        "incidents": 4,
+        "points": 12.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 60.1
+      },
+      {
+        "race_id": "372731",
+        "event": "Regular Season Finale",
+        "date": "2026-08-11",
+        "chase": "N",
+        "quali": 16,
+        "finish": 26,
+        "incidents": 16,
+        "points": 5.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 60.5
+      },
+      {
+        "race_id": "375822",
+        "event": "Round Of 12 - Round 14",
+        "date": "2026-08-25",
+        "chase": "N",
+        "quali": 21,
+        "finish": 19,
+        "incidents": 4,
+        "points": 12.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 71.1
+      },
+      {
+        "race_id": "377064",
+        "event": "Round Of 12 Cut Off Race - Round 15",
+        "date": "2026-09-01",
+        "chase": "N",
+        "quali": 27,
+        "finish": 29,
+        "incidents": 4,
+        "points": 2.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 50.7
+      },
+      {
+        "race_id": "378243",
+        "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
+        "date": "2026-09-08",
+        "chase": "N",
+        "quali": 8,
+        "finish": 31,
+        "incidents": 8,
+        "points": 1.0,
+        "laps_led": 0,
+        "status": "Disconnected",
+        "rating": 50.7
+      },
+      {
+        "race_id": "380888",
+        "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
+        "date": "2026-09-22",
+        "chase": "N",
+        "quali": 13,
+        "finish": 25,
+        "incidents": 12,
+        "points": 6.0,
+        "laps_led": 0,
+        "status": "Running",
+        "rating": 68.7
+      }
+    ],
+    "schedule": [
+      {
+        "date": "2026-05-19",
+        "event": "Season Opener - The Ultimate Custom Cabinets 225",
+        "chase": false,
+        "race_id": "356760",
+        "result": {
+          "race_id": "356760",
+          "event": "Season Opener - The Ultimate Custom Cabinets 225",
+          "date": "2026-05-19",
+          "chase": "N",
+          "quali": 17,
+          "finish": 14,
+          "incidents": 0,
+          "points": 19.0,
+          "laps_led": 2,
+          "status": "Running",
+          "rating": 82.0
+        }
+      },
+      {
+        "date": "2026-05-26",
+        "event": "Regular Season - Round 2",
+        "chase": false,
+        "race_id": "357842",
+        "result": {
+          "race_id": "357842",
+          "event": "Regular Season - Round 2",
+          "date": "2026-05-26",
+          "chase": "N",
+          "quali": 19,
+          "finish": 23,
+          "incidents": 19,
+          "points": 8.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 60.0
+        }
+      },
+      {
+        "date": "2026-06-02",
+        "event": "Regular Season - Round 3",
+        "chase": false,
+        "race_id": "359169",
+        "result": {
+          "race_id": "359169",
+          "event": "Regular Season - Round 3",
+          "date": "2026-06-02",
+          "chase": "N",
+          "quali": 28,
+          "finish": 24,
+          "incidents": 2,
+          "points": 7.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 59.1
+        }
+      },
+      {
+        "date": "2026-06-09",
+        "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
+        "chase": false,
+        "race_id": "360424",
+        "result": {
+          "race_id": "360424",
+          "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
+          "date": "2026-06-09",
+          "chase": "N",
+          "quali": 28,
+          "finish": 15,
+          "incidents": 8,
+          "points": 16.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 70.7
+        }
+      },
+      {
+        "date": "2026-06-16",
+        "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
+        "chase": false,
+        "race_id": "361730",
+        "result": {
+          "race_id": "361730",
+          "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
+          "date": "2026-06-16",
+          "chase": "N",
+          "quali": 18,
+          "finish": 11,
+          "incidents": 2,
+          "points": 20.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 73.5
+        }
+      },
+      {
+        "date": "2026-06-23",
+        "event": "Regular Season - Round 6",
+        "chase": false,
+        "race_id": "362856",
+        "result": {
+          "race_id": "362856",
+          "event": "Regular Season - Round 6",
+          "date": "2026-06-23",
+          "chase": "N",
+          "quali": 17,
+          "finish": 14,
+          "incidents": 4,
+          "points": 17.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 76.7
+        }
+      },
+      {
+        "date": "2026-06-30",
+        "event": "Regular Season - Round 7",
+        "chase": false,
+        "race_id": "364547",
+        "result": null
+      },
+      {
+        "date": "2026-07-07",
+        "event": "Regular Season - Round 8",
+        "chase": false,
+        "race_id": "365008",
+        "result": {
+          "race_id": "365008",
+          "event": "Regular Season - Round 8",
+          "date": "2026-07-07",
+          "chase": "N",
+          "quali": 19,
+          "finish": 29,
+          "incidents": 0,
+          "points": 2.0,
+          "laps_led": 0,
+          "status": "Disconnected",
+          "rating": 66.5
+        }
+      },
+      {
+        "date": "2026-07-14",
+        "event": "Regular Season - Round 9",
+        "chase": false,
+        "race_id": "366570",
+        "result": {
+          "race_id": "366570",
+          "event": "Regular Season - Round 9",
+          "date": "2026-07-14",
+          "chase": "N",
+          "quali": 18,
+          "finish": 22,
+          "incidents": 5,
+          "points": 9.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 64.1
+        }
+      },
+      {
+        "date": "2026-07-21",
+        "event": "Regular Season - Round 10",
+        "chase": false,
+        "race_id": "368101",
+        "result": {
+          "race_id": "368101",
+          "event": "Regular Season - Round 10",
+          "date": "2026-07-21",
+          "chase": "N",
+          "quali": 24,
+          "finish": 22,
+          "incidents": 0,
+          "points": 10.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 68.6
+        }
+      },
+      {
+        "date": "2026-07-28",
+        "event": "Regular Season - Round 11",
+        "chase": false,
+        "race_id": "369668",
+        "result": {
+          "race_id": "369668",
+          "event": "Regular Season - Round 11",
+          "date": "2026-07-28",
+          "chase": "N",
+          "quali": 22,
+          "finish": 23,
+          "incidents": 13,
+          "points": 8.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 57.5
+        }
+      },
+      {
+        "date": "2026-08-04",
+        "event": "Regular Season - Round 12",
+        "chase": false,
+        "race_id": "371564",
+        "result": {
+          "race_id": "371564",
+          "event": "Regular Season - Round 12",
+          "date": "2026-08-04",
+          "chase": "N",
+          "quali": 23,
+          "finish": 19,
+          "incidents": 4,
+          "points": 12.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 60.1
+        }
+      },
+      {
+        "date": "2026-08-11",
+        "event": "Regular Season Finale",
+        "chase": false,
+        "race_id": "372731",
+        "result": {
+          "race_id": "372731",
+          "event": "Regular Season Finale",
+          "date": "2026-08-11",
+          "chase": "N",
+          "quali": 16,
+          "finish": 26,
+          "incidents": 16,
+          "points": 5.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 60.5
+        }
+      },
+      {
+        "date": "2026-08-21",
+        "event": "Play-Offs - Round of 12",
+        "chase": true,
+        "race_id": "374458",
+        "result": null
+      },
+      {
+        "date": "2026-08-25",
+        "event": "Round Of 12 - Round 14",
+        "chase": false,
+        "race_id": "375822",
+        "result": {
+          "race_id": "375822",
+          "event": "Round Of 12 - Round 14",
+          "date": "2026-08-25",
+          "chase": "N",
+          "quali": 21,
+          "finish": 19,
+          "incidents": 4,
+          "points": 12.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 71.1
+        }
+      },
+      {
+        "date": "2026-09-01",
+        "event": "Round Of 12 Cut Off Race - Round 15",
+        "chase": false,
+        "race_id": "377064",
+        "result": {
+          "race_id": "377064",
+          "event": "Round Of 12 Cut Off Race - Round 15",
+          "date": "2026-09-01",
+          "chase": "N",
+          "quali": 27,
+          "finish": 29,
+          "incidents": 4,
+          "points": 2.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 50.7
+        }
+      },
+      {
+        "date": "2026-09-02",
+        "event": "Play-Offs - Round of 8",
+        "chase": true,
+        "race_id": "377147",
+        "result": null
+      },
+      {
+        "date": "2026-09-08",
+        "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
+        "chase": false,
+        "race_id": "378243",
+        "result": {
+          "race_id": "378243",
+          "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
+          "date": "2026-09-08",
+          "chase": "N",
+          "quali": 8,
+          "finish": 31,
+          "incidents": 8,
+          "points": 1.0,
+          "laps_led": 0,
+          "status": "Disconnected",
+          "rating": 50.7
+        }
+      },
+      {
+        "date": "2026-09-15",
+        "event": "Round Of 8 Cut-Off - Round 17",
+        "chase": false,
+        "race_id": "379598",
+        "result": null
+      },
+      {
+        "date": "2026-09-16",
+        "event": "Championship 4",
+        "chase": true,
+        "race_id": "379600",
+        "result": null
+      },
+      {
+        "date": "2026-09-22",
+        "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
+        "chase": false,
+        "race_id": "380888",
+        "result": {
+          "race_id": "380888",
+          "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
+          "date": "2026-09-22",
+          "chase": "N",
+          "quali": 13,
+          "finish": 25,
+          "incidents": 12,
+          "points": 6.0,
+          "laps_led": 0,
+          "status": "Running",
+          "rating": 68.7
+        }
+      }
+    ]
+  },
+  "coaching": {
+    "goals": {
+      "cup": "Top-12 playoff (now P18, 34 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
+      "trucks": "Season 14 done — next season starts Oct 13 Kentucky; no trucks race this weekend. Aim clean car, mid-pack+ finishes."
+    },
+    "pillars": [
+      "Qualifying",
+      "Short-track craft",
+      "Incident discipline",
+      "Attendance"
+    ],
+    "weekly_rhythm": [
+      "Mon–Tue: technique",
+      "Wed: Garage61 delta work",
+      "Thu: pace / fuel",
+      "Fri: traffic + race-week brief",
+      "Sat: light quali",
+      "Sun: race + post-review"
+    ],
+    "kansas": {
+      "date": "2026-09-27",
+      "series": "Bonfire Premier Cup",
+      "reported": "SRH Q14 → P6, 0x, +38 pts (3 laps led); coach: late pace + pit strategy (had ~Q15)",
+      "garage61": {
+        "best": "29.897",
+        "optimal": "29.667",
+        "clean_pct": "92% (143/156)",
+        "quali_best": "29.973",
+        "note": "S2 was the main lap-time leak vs earlier clean laps"
+      },
+      "setup": "3:15 ratio, 15/16 front arb, 7/8 rear, 44.6% BB",
+      "strengths": [
+        "Race craft / patience",
+        "Clean car",
+        "Late-run speed",
+        "Race pace > quali peak"
+      ],
+      "gaps": [
+        "Quali grid (started ~15)",
+        "S2 exit / mid-corner",
+        "~0.23s to optimal",
+        "Early stint slower than late"
+      ],
+      "simracerhub": {
+        "race_id": "381888",
+        "quali": 14,
+        "finish": 6,
+        "incidents": 0,
+        "points": 38.0,
+        "laps_led": 3,
+        "rating": 80.9
+      }
+    },
+    "qualcomm": {
+      "race_date": "2026-10-04",
+      "track": "Qualcomm Circuit (Naval Base Coronado) — 3.4 mi, 16-turn street course",
+      "targets": "Top-15 quali, mid-teens+ finish, under 4x",
+      "focus": "Brake → rotate → throttle; T2–3 90° lefts; Carrier Corner (T5); Coronado Chicane (T8–9); final chicane",
+      "practice_plan": [
+        {
+          "day": "Wed",
+          "mins": "60–75",
+          "focus": "Learn lap + T2–3 brake→rotate→throttle; mark boards; ghost best clean"
+        },
+        {
+          "day": "Thu",
+          "mins": "75–90",
+          "focus": "Coronado Chicane rhythm, Carrier Corner exit, final chicane; log 5-lap avg"
+        },
+        {
+          "day": "Fri",
+          "mins": "60–75",
+          "focus": "20–25 lap race stint + traffic; short pit practice; tag Garage61; race-week brief"
+        },
+        {
+          "day": "Sat",
+          "mins": "45–60",
+          "focus": "Light quali — 2–3 flyers + short race-sim; stop early if sharp"
+        },
+        {
+          "day": "Sun",
+          "mins": "race",
+          "focus": "Qualcomm Cup race + immediate post-review notes"
+        }
+      ],
+      "race_week": {
+        "fri": "Traffic + race-week brief (this brief)",
+        "sat": "Light quali — 2–3 flyers, short race-sim, stop early if sharp",
+        "sun": "Race day + post-review"
+      },
+      "reported": "SRH Q8 → P12, 0x, +31 pts; awaiting Jake debrief / Garage61",
+      "simracerhub": {
+        "race_id": "383208",
+        "quali": 8,
+        "finish": 12,
+        "incidents": 0,
+        "points": 31.0,
+        "laps_led": 0,
+        "rating": 82.7
+      },
+      "fuel_start_pct": 55,
+      "status": "race complete — coach debrief pending"
+    },
+    "trucks_next": {
+      "next_race": "2026-10-13 Kentucky",
+      "this_weekend": false,
+      "slate": [
+        "Kentucky",
+        "Daytona",
+        "North Wilkesboro",
+        "Charlotte",
+        "Indy Brickyard",
+        "Nashville SS",
+        "bye Thanksgiving",
+        "Michigan",
+        "Iowa"
+      ],
+      "note": "Big Trucking Tuesday Season 14 complete (P27, 16 starts, 0 top-10s, 101 incidents). No trucks race this weekend. New slate starts 2026-10-13 Kentucky (typically 7 / 7:50 PM CST)."
+    },
+    "links": {
+      "garage61": "https://garage61.net/app/drivers/jake-johnson-2",
+      "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
+      "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=29499"
+    },
+    "weekly_focus": "Post-Qualcomm (2026-10-04): Q8→P12, 0x, +31 pts. Cup P19 / 247 pts — 34 behind playoff cut (P12 Brenner, David). Next: Charlotte 2026-10-11. Trucks off until 2026-10-13 Kentucky.",
+    "next_cup": {
+      "race_date": "2026-10-11",
+      "track": "Charlotte Motor Speedway",
+      "targets": "Top-15 quali, mid-teens+ finish, under 4x",
+      "note": "Next Cup after Qualcomm — oval reset; lock fuel from bible (over 1 mile → 70%)."
+    },
+    "fuel": {
+      "updated": "2026-10-04",
+      "notes": "League fuel windows confirmed by Jake 2026-10-04. Percent is start fuel.",
+      "cup": {
+        "season_id": "30123",
+        "series": "Bonfire Premier Cup",
+        "jake_typical_car_id": "116",
+        "rules": {
+          "road_and_short_under_1_mile": "55%",
+          "tracks_over_1_mile": "70%"
+        },
+        "tracks": {
+          "qualcomm_circuit": {
+            "fuel_start_pct": 55,
+            "rule": "road course",
+            "confirmed": "2026-10-04"
+          },
+          "kansas": {
+            "fuel_start_pct": 70,
+            "rule": "over 1 mile",
+            "confirmed": "2026-10-04"
+          }
+        }
+      },
+      "trucks": {
+        "series": "Big Trucking Tuesday",
+        "jake_typical_car_id": "105",
+        "tracks": {
+          "talladega": {
+            "fuel_start_pct": 78,
+            "confirmed": "2026-10-04"
+          },
+          "homestead": {
+            "fuel_start_pct": 78,
+            "confirmed": "2026-10-04"
+          },
+          "rockingham": {
+            "fuel_start_pct": 55,
+            "confirmed": "2026-10-04"
+          },
+          "indianapolis": {
+            "fuel_start_pct": 78,
+            "confirmed": "2026-10-04"
+          },
+          "new_hampshire": {
+            "fuel_start_pct": 78,
+            "confirmed": "2026-10-04"
+          }
+        }
+      }
+    },
+    "race_week_brief_2026_10_09": {
+      "cup": {
+        "race": "Charlotte, Sun Oct 11",
+        "fuel": "70% if oval (>1 mi); 55% if Roval",
+        "targets": {
+          "quali": "top 12",
+          "finish": "top 10",
+          "incidents": "0-2x (chase 0x bonus)"
+        },
+        "practice": [
+          "Long-run tire falloff over 15+ laps",
+          "Entry to T1/T3 without overslowing",
+          "Restart launches and lane choice"
+        ],
+        "cue": "Stay in file to the S/F line on restarts"
+      },
+      "trucks": {
+        "race": "Kentucky 150 laps, Tue Oct 13 (Dennis Puckett 225 crown jewel, 5 tire sets)",
+        "target": "under 5x, finish all laps"
+      },
+      "playoff": "9 of 14 starts; Charlotte start clinches eligibility; ~34 pts back of cut"
+    }
+  },
+  "team": {
+    "name": "Florida Man Racing",
+    "subtitle": "Race Coach · Team",
+    "league": "Bonfire Racing League",
+    "drivers": [
+      {
+        "key": "jake",
+        "id": "122055",
+        "name": "Jake Johnson",
+        "first": "Jake",
+        "srh_name": "Jake M Johnson",
+        "cup": {
+          "position": 18,
+          "points": 247,
+          "starts": 9,
+          "avg_finish": 15.3,
+          "avg_quali": 16.1,
+          "total_incidents": 33,
+          "inc_per_race": 3.7,
+          "top10s": 2,
+          "top5s": 0,
+          "wins": 0,
+          "best_finish": 6,
+          "best_finish_track": "Kansas",
+          "clean_races": 4,
+          "low_inc_races": 5,
+          "laps_led": 10,
+          "disconnects": 0,
+          "places_gained_avg": 0.8,
+          "avg_rating": 77.4
+        },
+        "trucks": {
+          "position": 25,
+          "points": 154,
+          "starts": 16,
+          "avg_finish": 21.6,
+          "avg_quali": 19.9,
+          "total_incidents": 101,
+          "inc_per_race": 6.3,
+          "top10s": 0,
+          "top5s": 0,
+          "wins": 0,
+          "best_finish": 11,
+          "best_finish_track": "Texas",
+          "clean_races": 3,
+          "low_inc_races": 5,
+          "laps_led": 2,
+          "disconnects": 2,
+          "places_gained_avg": -1.8,
+          "avg_rating": 65.0
+        },
+        "playoff": {
+          "starts": 9,
+          "races_run": 11,
+          "races_remaining": 3,
+          "starts_needed": 1,
+          "max_starts": 12,
+          "start_min_met": false,
+          "start_min_possible": true,
+          "wins": 0,
+          "position": 18,
+          "points": 247,
+          "gap_to_p12": 34,
+          "positions_to_p12": 6,
+          "in_top12": false
+        },
+        "last3": [
+          {
+            "date": "2026-09-13",
+            "track": "Gateway",
+            "quali": 15,
+            "finish": 23,
+            "incidents": 4,
+            "points": 19,
+            "laps_led": 0,
+            "status": "Running"
+          },
+          {
+            "date": "2026-09-27",
+            "track": "Kansas",
+            "quali": 14,
+            "finish": 6,
+            "incidents": 0,
+            "points": 38,
+            "laps_led": 3,
+            "status": "Running"
+          },
+          {
+            "date": "2026-10-04",
+            "track": "Qualcomm Circuit",
+            "quali": 8,
+            "finish": 12,
+            "incidents": 0,
+            "points": 31,
+            "laps_led": 0,
+            "status": "Running"
+          }
+        ],
+        "strengths": [
+          "2 top-10s; best P6 (Kansas)",
+          "5 of 9 races at 0–2x"
+        ],
+        "focus": [
+          "Avg start P16.1 → avg finish P15.3 (+0.8 spots per race)",
+          "Incidents: 3.7x per race (33x total)"
+        ]
+      },
+      {
+        "key": "todd",
+        "id": "122383",
+        "name": "Todd Dunn",
+        "first": "Todd",
+        "srh_name": "Todd Dunn",
+        "cup": {
+          "position": 23,
+          "points": 194,
+          "starts": 10,
+          "avg_finish": 22.8,
+          "avg_quali": 25.3,
+          "total_incidents": 64,
+          "inc_per_race": 6.4,
+          "top10s": 1,
+          "top5s": 0,
+          "wins": 0,
+          "best_finish": 8,
+          "best_finish_track": "Daytona",
+          "clean_races": 2,
+          "low_inc_races": 3,
+          "laps_led": 0,
+          "disconnects": 1,
+          "places_gained_avg": 2.5,
+          "avg_rating": 62.6
+        },
+        "trucks": null,
+        "playoff": {
+          "starts": 10,
+          "races_run": 11,
+          "races_remaining": 3,
+          "starts_needed": 0,
+          "max_starts": 13,
+          "start_min_met": true,
+          "start_min_possible": true,
+          "wins": 0,
+          "position": 23,
+          "points": 194,
+          "gap_to_p12": 87,
+          "positions_to_p12": 11,
+          "in_top12": false
+        },
+        "last3": [
+          {
+            "date": "2026-09-13",
+            "track": "Gateway",
+            "quali": 27,
+            "finish": 26,
+            "incidents": 2,
+            "points": 16,
+            "laps_led": 0,
+            "status": "Running"
+          },
+          {
+            "date": "2026-09-27",
+            "track": "Kansas",
+            "quali": 23,
+            "finish": 13,
+            "incidents": 0,
+            "points": 30,
+            "laps_led": 0,
+            "status": "Running"
+          },
+          {
+            "date": "2026-10-04",
+            "track": "Qualcomm Circuit",
+            "quali": 24,
+            "finish": 22,
+            "incidents": 18,
+            "points": 20,
+            "laps_led": 0,
+            "status": "Running"
+          }
+        ],
+        "strengths": [
+          "Avg start P25.3 → avg finish P22.8 (+2.5 spots per race)",
+          "1 top-10; best P8 (Daytona)",
+          "3 of 10 races at 0–2x"
+        ],
+        "focus": [
+          "Incidents: 6.4x per race (64x total)",
+          "Qualifying: avg grid P25.3",
+          "1 disconnect this season"
+        ]
+      },
+      {
+        "key": "tim",
+        "id": "101485",
+        "name": "Tim Darby",
+        "first": "Tim",
+        "srh_name": "Timothy Darby",
+        "cup": {
+          "position": 24,
+          "points": 182,
+          "starts": 9,
+          "avg_finish": 21.9,
+          "avg_quali": 28.6,
+          "total_incidents": 84,
+          "inc_per_race": 9.3,
+          "top10s": 0,
+          "top5s": 0,
+          "wins": 0,
+          "best_finish": 15,
+          "best_finish_track": "Bristol",
+          "clean_races": 1,
+          "low_inc_races": 2,
+          "laps_led": 0,
+          "disconnects": 1,
+          "places_gained_avg": 6.7,
+          "avg_rating": 57.9
+        },
+        "trucks": {
+          "position": 35,
+          "points": 95,
+          "starts": 12,
+          "avg_finish": 23.2,
+          "avg_quali": 28.1,
+          "total_incidents": 100,
+          "inc_per_race": 8.3,
+          "top10s": 0,
+          "top5s": 0,
+          "wins": 0,
+          "best_finish": 18,
+          "best_finish_track": "Las Vegas",
+          "clean_races": 1,
+          "low_inc_races": 2,
+          "laps_led": 0,
+          "disconnects": 1,
+          "places_gained_avg": 4.9,
+          "avg_rating": 58.8
+        },
+        "playoff": {
+          "starts": 9,
+          "races_run": 11,
+          "races_remaining": 3,
+          "starts_needed": 1,
+          "max_starts": 12,
+          "start_min_met": false,
+          "start_min_possible": true,
+          "wins": 0,
+          "position": 24,
+          "points": 182,
+          "gap_to_p12": 99,
+          "positions_to_p12": 12,
+          "in_top12": false
+        },
+        "last3": [
+          {
+            "date": "2026-09-20",
+            "track": "Bristol",
+            "quali": 19,
+            "finish": 15,
+            "incidents": 20,
+            "points": 27,
+            "laps_led": 0,
+            "status": "Running"
+          },
+          {
+            "date": "2026-09-27",
+            "track": "Kansas",
+            "quali": 27,
+            "finish": 16,
+            "incidents": 12,
+            "points": 26,
+            "laps_led": 0,
+            "status": "Running"
+          },
+          {
+            "date": "2026-10-04",
+            "track": "Qualcomm Circuit",
+            "quali": 25,
+            "finish": 24,
+            "incidents": 14,
+            "points": 18,
+            "laps_led": 0,
+            "status": "Running"
+          }
+        ],
+        "strengths": [
+          "Avg start P28.6 → avg finish P21.9 (+6.7 spots per race)",
+          "2 of 9 races at 0–2x"
+        ],
+        "focus": [
+          "Incidents: 9.3x per race (84x total)",
+          "Qualifying: avg grid P28.6",
+          "1 disconnect this season"
+        ]
+      }
+    ],
+    "cup": {
+      "series_name": "Bonfire Premier Cup",
+      "season_name": "Season 16",
+      "season_id": "30123",
+      "field_size": 48,
+      "races_run": 11,
+      "regular_season_races": 14,
+      "regular_season_remaining": [
+        {
+          "date": "2026-10-11",
+          "track": "Charlotte"
+        },
+        {
+          "date": "2026-10-18",
+          "track": "Phoenix"
+        },
+        {
+          "date": "2026-10-25",
+          "track": "Las Vegas"
+        }
+      ],
+      "p12": {
+        "name": "David Brenner",
+        "points": 281
+      },
+      "leader": {
+        "name": "Joseph Vulpis",
+        "points": 418
+      },
+      "winners_outside_top12": [
+        {
+          "name": "Paul Ferdiani",
+          "position": 20,
+          "wins": 1,
+          "starts": 10,
+          "can_reach_10_starts": true
+        },
+        {
+          "name": "Jason Landry",
+          "position": 36,
+          "wins": 2,
+          "starts": 2,
+          "can_reach_10_starts": false
+        },
+        {
+          "name": "David Owens3",
+          "position": 40,
+          "wins": 1,
+          "starts": 2,
+          "can_reach_10_starts": false
+        }
+      ],
+      "rules": "14-race regular season · 10 of 14 starts required · a regular-season win = automatic berth, otherwise top 12 on points",
+      "results": [
+        {
+          "race_id": "367670",
+          "date": "2026-07-19",
+          "track": "Kentucky",
+          "track_full": "Kentucky Speedway",
+          "event": "Dennis Puckett Memorial 250 at Kentucky",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 26,
+              "finish": 21,
+              "incidents": 0,
+              "points": 22,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 28,
+              "finish": 30,
+              "incidents": 0,
+              "points": 13,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 29,
+              "finish": 28,
+              "incidents": 2,
+              "points": 14,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "369202",
+          "date": "2026-07-26",
+          "track": "Indianapolis",
+          "track_full": "Indianapolis Motor Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 11,
+              "finish": 16,
+              "incidents": 1,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 29,
+              "finish": 32,
+              "incidents": 7,
+              "points": 10,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 33,
+              "finish": 25,
+              "incidents": 16,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "370784",
+          "date": "2026-08-02",
+          "track": "Fontana",
+          "track_full": "Auto Club Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 24,
+              "finish": 14,
+              "incidents": 0,
+              "points": 30,
+              "laps_led": 6,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 25,
+              "finish": 18,
+              "incidents": 4,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 30,
+              "finish": 17,
+              "incidents": 0,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "372264",
+          "date": "2026-08-09",
+          "track": "Iowa",
+          "track_full": "Iowa Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 29,
+              "finish": 17,
+              "incidents": 8,
+              "points": 25,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 25,
+              "finish": 24,
+              "incidents": 4,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 32,
+              "finish": 25,
+              "incidents": 4,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "373608",
+          "date": "2026-08-16",
+          "track": "Richmond",
+          "track_full": "Richmond Raceway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": null,
+            "todd": {
+              "quali": 20,
+              "finish": 25,
+              "incidents": 4,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Disconnected"
+            },
+            "tim": null
+          }
+        },
+        {
+          "race_id": "375123",
+          "date": "2026-08-23",
+          "track": "New Hampshire",
+          "track_full": "New Hampshire Motor Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 16,
+              "finish": 19,
+              "incidents": 10,
+              "points": 23,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 28,
+              "finish": 30,
+              "incidents": 14,
+              "points": 12,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 35,
+              "finish": 23,
+              "incidents": 10,
+              "points": 19,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "376548",
+          "date": "2026-08-30",
+          "track": "Daytona",
+          "track_full": "Daytona International Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 2,
+              "finish": 10,
+              "incidents": 10,
+              "points": 33,
+              "laps_led": 1,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 24,
+              "finish": 8,
+              "incidents": 11,
+              "points": 34,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 27,
+              "finish": 24,
+              "incidents": 6,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Disconnected"
+            }
+          }
+        },
+        {
+          "race_id": "379028",
+          "date": "2026-09-13",
+          "track": "Gateway",
+          "track_full": "World Wide Technology Raceway (Gateway)",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 15,
+              "finish": 23,
+              "incidents": 4,
+              "points": 19,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 27,
+              "finish": 26,
+              "incidents": 2,
+              "points": 16,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": null
+          }
+        },
+        {
+          "race_id": "380373",
+          "date": "2026-09-20",
+          "track": "Bristol",
+          "track_full": "Bristol Motor Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": null,
+            "todd": null,
+            "tim": {
+              "quali": 19,
+              "finish": 15,
+              "incidents": 20,
+              "points": 27,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "381888",
+          "date": "2026-09-27",
+          "track": "Kansas",
+          "track_full": "Kansas Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 14,
+              "finish": 6,
+              "incidents": 0,
+              "points": 38,
+              "laps_led": 3,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 23,
+              "finish": 13,
+              "incidents": 0,
+              "points": 30,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 27,
+              "finish": 16,
+              "incidents": 12,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "383208",
+          "date": "2026-10-04",
+          "track": "Qualcomm Circuit",
+          "track_full": "Qualcomm Circuit (Naval Base Coronado)",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 8,
+              "finish": 12,
+              "incidents": 0,
+              "points": 31,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 24,
+              "finish": 22,
+              "incidents": 18,
+              "points": 20,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 25,
+              "finish": 24,
+              "incidents": 14,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        }
+      ],
+      "schedule": [
+        {
+          "date": "2026-07-19",
+          "race_id": "367670",
+          "chase": false,
+          "event": "Kentucky",
+          "track_full": "Kentucky Speedway",
+          "team": {
+            "jake": {
+              "quali": 26,
+              "finish": 21,
+              "incidents": 0,
+              "points": 22,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 28,
+              "finish": 30,
+              "incidents": 0,
+              "points": 13,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 29,
+              "finish": 28,
+              "incidents": 2,
+              "points": 14,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-07-26",
+          "race_id": "369202",
+          "chase": false,
+          "event": "Indianapolis",
+          "track_full": "Indianapolis Motor Speedway",
+          "team": {
+            "jake": {
+              "quali": 11,
+              "finish": 16,
+              "incidents": 1,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 29,
+              "finish": 32,
+              "incidents": 7,
+              "points": 10,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 33,
+              "finish": 25,
+              "incidents": 16,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-08-02",
+          "race_id": "370784",
+          "chase": false,
+          "event": "Fontana",
+          "track_full": "Auto Club Speedway",
+          "team": {
+            "jake": {
+              "quali": 24,
+              "finish": 14,
+              "incidents": 0,
+              "points": 30,
+              "laps_led": 6,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 25,
+              "finish": 18,
+              "incidents": 4,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 30,
+              "finish": 17,
+              "incidents": 0,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-08-09",
+          "race_id": "372264",
+          "chase": false,
+          "event": "Iowa",
+          "track_full": "Iowa Speedway",
+          "team": {
+            "jake": {
+              "quali": 29,
+              "finish": 17,
+              "incidents": 8,
+              "points": 25,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 25,
+              "finish": 24,
+              "incidents": 4,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 32,
+              "finish": 25,
+              "incidents": 4,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-08-16",
+          "race_id": "373608",
+          "chase": false,
+          "event": "Richmond",
+          "track_full": "Richmond Raceway",
+          "team": {
+            "jake": null,
+            "todd": {
+              "quali": 20,
+              "finish": 25,
+              "incidents": 4,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Disconnected"
+            },
+            "tim": null
+          }
+        },
+        {
+          "date": "2026-08-23",
+          "race_id": "375123",
+          "chase": false,
+          "event": "New Hampshire",
+          "track_full": "New Hampshire Motor Speedway",
+          "team": {
+            "jake": {
+              "quali": 16,
+              "finish": 19,
+              "incidents": 10,
+              "points": 23,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 28,
+              "finish": 30,
+              "incidents": 14,
+              "points": 12,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 35,
+              "finish": 23,
+              "incidents": 10,
+              "points": 19,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-08-30",
+          "race_id": "376548",
+          "chase": false,
+          "event": "Daytona",
+          "track_full": "Daytona International Speedway",
+          "team": {
+            "jake": {
+              "quali": 2,
+              "finish": 10,
+              "incidents": 10,
+              "points": 33,
+              "laps_led": 1,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 24,
+              "finish": 8,
+              "incidents": 11,
+              "points": 34,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 27,
+              "finish": 24,
+              "incidents": 6,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Disconnected"
+            }
+          }
+        },
+        {
+          "date": "2026-09-13",
+          "race_id": "379028",
+          "chase": false,
+          "event": "Gateway",
+          "track_full": "World Wide Technology Raceway (Gateway)",
+          "team": {
+            "jake": {
+              "quali": 15,
+              "finish": 23,
+              "incidents": 4,
+              "points": 19,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 27,
+              "finish": 26,
+              "incidents": 2,
+              "points": 16,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": null
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "race_id": "380373",
+          "chase": false,
+          "event": "Bristol",
+          "track_full": "Bristol Motor Speedway",
+          "team": {
+            "jake": null,
+            "todd": null,
+            "tim": {
+              "quali": 19,
+              "finish": 15,
+              "incidents": 20,
+              "points": 27,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-09-27",
+          "race_id": "381888",
+          "chase": false,
+          "event": "Kansas",
+          "track_full": "Kansas Speedway",
+          "team": {
+            "jake": {
+              "quali": 14,
+              "finish": 6,
+              "incidents": 0,
+              "points": 38,
+              "laps_led": 3,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 23,
+              "finish": 13,
+              "incidents": 0,
+              "points": 30,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 27,
+              "finish": 16,
+              "incidents": 12,
+              "points": 26,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-10-04",
+          "race_id": "383208",
+          "chase": false,
+          "event": "Qualcomm Circuit",
+          "track_full": "Qualcomm Circuit (Naval Base Coronado)",
+          "team": {
+            "jake": {
+              "quali": 8,
+              "finish": 12,
+              "incidents": 0,
+              "points": 31,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 24,
+              "finish": 22,
+              "incidents": 18,
+              "points": 20,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 25,
+              "finish": 24,
+              "incidents": 14,
+              "points": 18,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "date": "2026-10-11",
+          "race_id": null,
+          "chase": false,
+          "event": "Charlotte",
+          "track_full": "Charlotte Motor Speedway",
+          "team": null
+        },
+        {
+          "date": "2026-10-18",
+          "race_id": null,
+          "chase": false,
+          "event": "Phoenix",
+          "track_full": "Phoenix Raceway",
+          "team": null
+        },
+        {
+          "date": "2026-10-25",
+          "race_id": null,
+          "chase": false,
+          "event": "Las Vegas",
+          "track_full": "Las Vegas Motor Speedway",
+          "team": null
+        },
+        {
+          "date": "2026-11-01",
+          "race_id": null,
+          "chase": true,
+          "event": "Round 1",
+          "track_full": "",
+          "team": null
+        },
+        {
+          "date": "2026-11-01",
+          "race_id": null,
+          "chase": false,
+          "event": "Atlanta",
+          "track_full": "EchoPark Speedway (Atlanta)",
+          "team": null
+        },
+        {
+          "date": "2026-11-08",
+          "race_id": null,
+          "chase": false,
+          "event": "Homestead",
+          "track_full": "Homestead Miami Speedway",
+          "team": null
+        },
+        {
+          "date": "2026-11-15",
+          "race_id": null,
+          "chase": true,
+          "event": "Round 2",
+          "track_full": "",
+          "team": null
+        },
+        {
+          "date": "2026-11-15",
+          "race_id": null,
+          "chase": false,
+          "event": "Michigan",
+          "track_full": "Michigan International Speedway",
+          "team": null
+        },
+        {
+          "date": "2026-11-22",
+          "race_id": null,
+          "chase": false,
+          "event": "Nashville Superspeedway",
+          "track_full": "Nashville Superspeedway",
+          "team": null
+        },
+        {
+          "date": "2026-12-06",
+          "race_id": null,
+          "chase": true,
+          "event": "Championship Round",
+          "track_full": "",
+          "team": null
+        },
+        {
+          "date": "2026-12-06",
+          "race_id": null,
+          "chase": false,
+          "event": "Chicagoland",
+          "track_full": "Chicagoland Speedway",
+          "team": null
+        },
+        {
+          "date": "2026-12-13",
+          "race_id": null,
+          "chase": false,
+          "event": "Darlington",
+          "track_full": "Darlington Raceway",
+          "team": null
+        },
+        {
+          "date": "2026-12-20",
+          "race_id": null,
+          "chase": false,
+          "event": "Talladega",
+          "track_full": "Talladega Superspeedway",
+          "team": null
+        }
+      ]
+    },
+    "trucks": {
+      "series_name": "Big Trucking Tuesday",
+      "season_name": "Season 14",
+      "season_id": "29499",
+      "field_size": 60,
+      "status": "Season 14 complete",
+      "results": [
+        {
+          "race_id": "356760",
+          "date": "2026-05-19",
+          "track": "Kentucky",
+          "track_full": "Kentucky Speedway",
+          "event": "Season Opener - The Ultimate Custom Cabinets 225",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 17,
+              "finish": 14,
+              "incidents": 0,
+              "points": 19,
+              "laps_led": 2,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 26,
+              "finish": 24,
+              "incidents": 0,
+              "points": 8,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "357842",
+          "date": "2026-05-26",
+          "track": "Charlotte",
+          "track_full": "Charlotte Motor Speedway",
+          "event": "Regular Season - Round 2",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 19,
+              "finish": 23,
+              "incidents": 19,
+              "points": 8,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 26,
+              "finish": 20,
+              "incidents": 18,
+              "points": 11,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "359169",
+          "date": "2026-06-02",
+          "track": "Nashville Superspeedway",
+          "track_full": "Nashville Superspeedway",
+          "event": "Regular Season - Round 3",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 28,
+              "finish": 24,
+              "incidents": 2,
+              "points": 7,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 33,
+              "finish": 25,
+              "incidents": 3,
+              "points": 6,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "360424",
+          "date": "2026-06-09",
+          "track": "Michigan",
+          "track_full": "Michigan International Speedway",
+          "event": "Regular Season - Round 4: The Beach Mode Baseball 170",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 28,
+              "finish": 15,
+              "incidents": 8,
+              "points": 16,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 30,
+              "finish": 21,
+              "incidents": 8,
+              "points": 10,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "361730",
+          "date": "2026-06-16",
+          "track": "Texas",
+          "track_full": "Texas Motor Speedway",
+          "event": "Regular Season - Round 5 - The EuroSpeed Racing 165",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 18,
+              "finish": 11,
+              "incidents": 2,
+              "points": 20,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "362856",
+          "date": "2026-06-23",
+          "track": "Dover",
+          "track_full": "Dover Motor Speedway",
+          "event": "Regular Season - Round 6",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 17,
+              "finish": 14,
+              "incidents": 4,
+              "points": 17,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 25,
+              "finish": 22,
+              "incidents": 16,
+              "points": 9,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "364547",
+          "date": "2026-06-30",
+          "track": "Daytona",
+          "track_full": "Daytona International Speedway",
+          "event": "Regular Season - Round 7",
+          "chase": false,
+          "drivers": {
+            "jake": null,
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "365008",
+          "date": "2026-07-07",
+          "track": "Iowa",
+          "track_full": "Iowa Speedway",
+          "event": "Regular Season - Round 8",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 19,
+              "finish": 29,
+              "incidents": 0,
+              "points": 2,
+              "laps_led": 0,
+              "status": "Disconnected"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 31,
+              "finish": 25,
+              "incidents": 8,
+              "points": 6,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "366570",
+          "date": "2026-07-14",
+          "track": "Lime Rock Park",
+          "track_full": "Lime Rock Park",
+          "event": "Regular Season - Round 9",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 18,
+              "finish": 22,
+              "incidents": 5,
+              "points": 9,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 28,
+              "finish": 21,
+              "incidents": 25,
+              "points": 10,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "368101",
+          "date": "2026-07-21",
+          "track": "Richmond",
+          "track_full": "Richmond Raceway",
+          "event": "Regular Season - Round 10",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 24,
+              "finish": 22,
+              "incidents": 0,
+              "points": 10,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "369668",
+          "date": "2026-07-28",
+          "track": "IRP",
+          "track_full": "Lucas Oil Indianapolis Raceway Park",
+          "event": "Regular Season - Round 11",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 22,
+              "finish": 23,
+              "incidents": 13,
+              "points": 8,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "371564",
+          "date": "2026-08-04",
+          "track": "Las Vegas",
+          "track_full": "Las Vegas Motor Speedway",
+          "event": "Regular Season - Round 12",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 23,
+              "finish": 19,
+              "incidents": 4,
+              "points": 12,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 26,
+              "finish": 18,
+              "incidents": 3,
+              "points": 13,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "372731",
+          "date": "2026-08-11",
+          "track": "Pocono",
+          "track_full": "Pocono Raceway",
+          "event": "Regular Season Finale",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 16,
+              "finish": 26,
+              "incidents": 16,
+              "points": 5,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "375822",
+          "date": "2026-08-25",
+          "track": "New Hampshire",
+          "track_full": "New Hampshire Motor Speedway",
+          "event": "Round Of 12 - Round 14",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 21,
+              "finish": 19,
+              "incidents": 4,
+              "points": 12,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 31,
+              "finish": 25,
+              "incidents": 6,
+              "points": 6,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "377064",
+          "date": "2026-09-01",
+          "track": "Indianapolis",
+          "track_full": "Indianapolis Motor Speedway",
+          "event": "Round Of 12 Cut Off Race - Round 15",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 27,
+              "finish": 29,
+              "incidents": 4,
+              "points": 2,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": null
+          }
+        },
+        {
+          "race_id": "378243",
+          "date": "2026-09-08",
+          "track": "Rockingham",
+          "track_full": "Rockingham Speedway",
+          "event": "Round Of 8 - Round 16 The Wall 2 Wall Paints 141",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 8,
+              "finish": 31,
+              "incidents": 8,
+              "points": 1,
+              "laps_led": 0,
+              "status": "Disconnected"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 25,
+              "finish": 30,
+              "incidents": 2,
+              "points": 1,
+              "laps_led": 0,
+              "status": "Disconnected"
+            }
+          }
+        },
+        {
+          "race_id": "379598",
+          "date": "2026-09-15",
+          "track": "Homestead",
+          "track_full": "Homestead Miami Speedway",
+          "event": "Round Of 8 Cut-Off - Round 17",
+          "chase": false,
+          "drivers": {
+            "jake": null,
+            "todd": null,
+            "tim": {
+              "quali": 23,
+              "finish": 24,
+              "incidents": 4,
+              "points": 7,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        },
+        {
+          "race_id": "380888",
+          "date": "2026-09-22",
+          "track": "Talladega",
+          "track_full": "Talladega Superspeedway",
+          "event": "SEASON 14 FINALE &amp; CHAMPIONSHIP RACE",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 13,
+              "finish": 25,
+              "incidents": 12,
+              "points": 6,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": null,
+            "tim": {
+              "quali": 33,
+              "finish": 23,
+              "incidents": 7,
+              "points": 8,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
+        }
+      ],
+      "next_season_rules": "13-race regular season · 10 of 13 starts required · playoffs on points only",
+      "next_season": [
+        {
+          "rd": "R1",
+          "date": "2026-10-13",
+          "track": "Kentucky",
+          "laps": 150,
+          "miles": 225,
+          "tires": 5,
+          "note": "Crown jewel"
+        },
+        {
+          "rd": "R2",
+          "date": "2026-10-20",
+          "track": "Daytona",
+          "laps": 80,
+          "miles": 200,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R3",
+          "date": "2026-10-27",
+          "track": "North Wilkesboro",
+          "laps": 150,
+          "miles": 93.75,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R4",
+          "date": "2026-11-03",
+          "track": "Charlotte",
+          "laps": 110,
+          "miles": 165,
+          "tires": 4,
+          "note": "In-Season Tournament prelim"
+        },
+        {
+          "rd": "R5",
+          "date": "2026-11-10",
+          "track": "Indianapolis",
+          "laps": 55,
+          "miles": 137.5,
+          "tires": 4,
+          "note": "IST Round of 32"
+        },
+        {
+          "rd": "R6",
+          "date": "2026-11-17",
+          "track": "Nashville Superspeedway",
+          "laps": 130,
+          "miles": 173,
+          "tires": 4,
+          "note": "IST Round of 16"
+        },
+        {
+          "rd": "—",
+          "date": "2026-11-24",
+          "track": "Off week",
+          "off": true
+        },
+        {
+          "rd": "R7",
+          "date": "2026-12-01",
+          "track": "Michigan",
+          "laps": 85,
+          "miles": 170,
+          "tires": 4,
+          "note": "IST Quarterfinal (8)"
+        },
+        {
+          "rd": "R8",
+          "date": "2026-12-08",
+          "track": "Iowa",
+          "laps": 120,
+          "miles": 105,
+          "tires": 4,
+          "note": "IST Semifinal (4)"
+        },
+        {
+          "rd": "R9",
+          "date": "2026-12-15",
+          "track": "Atlanta",
+          "laps": 115,
+          "miles": 177,
+          "tires": 4,
+          "note": "IST Final (2)"
+        },
+        {
+          "rd": "—",
+          "date": "2026-12-22",
+          "track": "Off week",
+          "off": true
+        },
+        {
+          "rd": "—",
+          "date": "2026-12-29",
+          "track": "Off week",
+          "off": true
+        },
+        {
+          "rd": "R10",
+          "date": "2027-01-05",
+          "track": "Sonoma",
+          "laps": null,
+          "miles": null,
+          "tires": 4,
+          "note": "Distance TBC"
+        },
+        {
+          "rd": "R11",
+          "date": "2027-01-12",
+          "track": "Las Vegas",
+          "laps": 115,
+          "miles": 172.5,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R12",
+          "date": "2027-01-19",
+          "track": "Pocono",
+          "laps": 55,
+          "miles": 137.5,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R13",
+          "date": "2027-01-26",
+          "track": "TBC",
+          "laps": null,
+          "miles": null,
+          "tires": 4,
+          "note": "Regular-season finale"
+        },
+        {
+          "rd": "PO",
+          "date": null,
+          "track": "Playoffs",
+          "laps": null,
+          "miles": null,
+          "tires": null,
+          "note": "Dates TBC"
+        }
+      ]
+    },
+    "next_races": [
+      {
+        "series": "Cup",
+        "series_name": "Bonfire Premier Cup",
+        "date": "2026-10-11",
+        "day": "Sun",
+        "track": "Charlotte Motor Speedway",
+        "facts": [
+          "Race 12 of 14 (regular season)",
+          "Fuel: 70% start (oval over 1 mi)",
+          "4 extra tire sets"
+        ]
+      },
+      {
+        "series": "Trucks",
+        "series_name": "Big Trucking Tuesday",
+        "date": "2026-10-13",
+        "day": "Tue",
+        "track": "Kentucky Speedway",
+        "facts": [
+          "New season · Round 1 · crown jewel",
+          "150 laps / 225 mi",
+          "5 tire sets"
+        ]
+      }
+    ],
+    "rules": {
+      "cup": [
+        [
+          "Practice",
+          "50 minutes"
+        ],
+        [
+          "Qualifying",
+          "Lone quali, 2 laps / 10 min; driver's briefing in the last 2 min"
+        ],
+        [
+          "Fuel (start)",
+          "55% road courses & tracks under 1 mi · 70% tracks over 1 mi"
+        ],
+        [
+          "Tires",
+          "4 extra sets"
+        ],
+        [
+          "Incidents",
+          "21x drive-through · 33x DQ"
+        ],
+        [
+          "Points",
+          "45 / 40 / 39 … for P1 / P2 / P3"
+        ],
+        [
+          "Bonus points",
+          "Pole · led a lap · most laps led · 0x with 75% of laps completed"
+        ],
+        [
+          "Apron",
+          "Legal, except Daytona / Talladega / Atlanta (yellow line)"
+        ],
+        [
+          "Restarts",
+          "Stay in file to the start/finish line"
+        ]
+      ],
+      "trucks": [
+        [
+          "Practice",
+          "1 hour"
+        ],
+        [
+          "Qualifying",
+          "2 laps"
+        ],
+        [
+          "Fuel (start)",
+          "78% default; some tracks differ (e.g. Rockingham 55%)"
+        ],
+        [
+          "Tires",
+          "4 sets unless noted (Kentucky R1: 5)"
+        ],
+        [
+          "Incidents",
+          "17x drive-through (ovals only)"
+        ],
+        [
+          "Points",
+          "30 for the win, down by 1 per position"
+        ],
+        [
+          "Bonus points",
+          "Pole · led a lap · 0x"
+        ],
+        [
+          "Apron",
+          "Only the frontstretch tri-oval and the Phoenix dogleg"
+        ],
+        [
+          "Pit stops",
+          "Call green-flag pit stops on voice"
+        ]
+      ]
+    }
   }
- }
 }

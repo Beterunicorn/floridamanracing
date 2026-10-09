@@ -4,15 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#0a0b0d" />
-  <title>Race Coach · Jake Johnson</title>
+  <title>Florida Man Racing · Race Coach</title>
+  <meta name="description" content="Florida Man Racing team dashboard: standings, playoff picture, results, schedules and rules." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%227%22 fill=%22%23e11d2e%22/%3E%3Cpath d=%22M11 21l6-6-6-6%22 stroke=%22white%22 stroke-width=%223%22 fill=%22none%22/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css?v=1791558071" />
+  <link rel="stylesheet" href="./styles.css?v=1791565995" />
 </head>
 <body>
-  <a class="skip-link" href="#overview">Skip to content</a>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- Inline SVG icon sprite (line icons, 24px grid) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
@@ -27,6 +28,10 @@
       <symbol id="i-links" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/></symbol>
       <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11L12 4l8.5 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></symbol>
       <symbol id="i-more" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="8" cy="12" r="0.6" fill="currentColor"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/><circle cx="16" cy="12" r="0.6" fill="currentColor"/></symbol>
+      <symbol id="i-team" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9.5" r="2.5"/><path d="M16.5 14.2c2.6.2 4.5 2 4.5 4.8"/></symbol>
+      <symbol id="i-table" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M3.5 9.5h17"/><path d="M3.5 14.5h17"/><path d="M9.5 9.5v10"/></symbol>
+      <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4"/><path d="M5 4.5h13l-2.5 4 2.5 4H5"/><path d="M9 4.5v8"/><path d="M13 4.5v8"/><path d="M5 8.5h13"/></symbol>
+      <symbol id="i-rules" viewBox="0 0 24 24"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.5A1.5 1.5 0 0 0 5 19.5z"/><path d="M5 19.5A1.5 1.5 0 0 0 6.5 21H19v-3"/><path d="M9 7.5h6"/><path d="M9 11h6"/></symbol>
     </defs>
   </svg>
 
@@ -35,37 +40,45 @@
     <div class="brand">
       <span class="brand-mark" aria-hidden="true"></span>
       <div>
-        <div class="brand-title">Race Coach</div>
-        <div class="brand-sub" id="driver-name">Jake Johnson</div>
+        <div class="brand-title">Florida Man Racing</div>
+        <div class="brand-sub" id="team-subtitle">Race Coach · Team</div>
       </div>
     </div>
     <nav class="side-nav" id="nav" aria-label="Sections">
       <div class="nav-group">
         <div class="nav-group-label" id="ng-home">Home</div>
         <ul aria-labelledby="ng-home">
-          <li><a class="nav-item" href="#overview" data-section="overview"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-overview"/></svg><span>Overview</span></a></li>
-          <li><a class="nav-item" href="#goals" data-section="goals"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-goals"/></svg><span>Goals</span></a></li>
+          <li><a class="nav-item" href="#overview" data-section="overview"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-overview"/></svg><span>Overview</span></a></li>
+          <li><a class="nav-item" href="#goals" data-section="goals"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-goals"/></svg><span>Team Goals</span></a></li>
+        </ul>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label" id="ng-team">Team</div>
+        <ul aria-labelledby="ng-team">
+          <li><a class="nav-item" href="#team" data-section="team"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-team"/></svg><span>Drivers</span></a></li>
+          <li><a class="nav-item" href="#cup-results" data-section="cup-results"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-table"/></svg><span>Team Results</span></a></li>
         </ul>
       </div>
       <div class="nav-group">
         <div class="nav-group-label" id="ng-cup">Cup</div>
         <ul aria-labelledby="ng-cup">
-          <li><a class="nav-item" href="#cup-results" data-section="cup-results"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-results"/></svg><span>Results</span></a></li>
-          <li><a class="nav-item" href="#cup-schedule" data-section="cup-schedule"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-schedule"/></svg><span>Schedule</span></a></li>
-          <li><a class="nav-item" href="#kansas" data-section="kansas"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-debrief"/></svg><span>Kansas Debrief</span></a></li>
-          <li><a class="nav-item" href="#qualcomm" data-section="qualcomm"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-plan"/></svg><span>Qualcomm Plan</span></a></li>
+          <li><a class="nav-item" href="#cup-schedule" data-section="cup-schedule"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-schedule"/></svg><span>Schedule</span></a></li>
+          <li><a class="nav-item" href="#debriefs" data-section="debriefs"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-debrief"/></svg><span>Race Debriefs</span></a></li>
+          <li><a class="nav-item" href="#practice" data-section="practice"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-plan"/></svg><span>Practice Plans</span></a></li>
         </ul>
       </div>
       <div class="nav-group">
         <div class="nav-group-label" id="ng-trucks">Trucks</div>
         <ul aria-labelledby="ng-trucks">
-          <li><a class="nav-item" href="#trucks" data-section="trucks"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-truck"/></svg><span>Trucks</span></a></li>
+          <li><a class="nav-item" href="#trucks" data-section="trucks"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg><span>Season 14</span></a></li>
+          <li><a class="nav-item" href="#trucks-schedule" data-section="trucks-schedule"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-flag"/></svg><span>Next Season</span></a></li>
         </ul>
       </div>
       <div class="nav-group">
         <div class="nav-group-label" id="ng-more">More</div>
         <ul aria-labelledby="ng-more">
-          <li><a class="nav-item" href="#links" data-section="links"><svg width="22" height="22" class="nav-icon" aria-hidden="true"><use href="#i-links"/></svg><span>Links</span></a></li>
+          <li><a class="nav-item" href="#rules" data-section="rules"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-rules"/></svg><span>Team Rules</span></a></li>
+          <li><a class="nav-item" href="#links" data-section="links"><svg class="nav-icon" width="18" height="18" aria-hidden="true" focusable="false"><use href="#i-links"/></svg><span>Links</span></a></li>
         </ul>
       </div>
     </nav>
@@ -76,122 +89,126 @@
   </aside>
 
   <!-- Mobile top bar (< 900px) -->
-  <header class="mobile-bar" aria-label="Race Coach">
+  <header class="mobile-bar" aria-label="Florida Man Racing">
     <span class="brand-mark brand-mark-sm" aria-hidden="true"></span>
     <div class="mobile-bar-text">
-      <div class="mobile-bar-title">Race Coach</div>
-      <div class="mobile-bar-section" id="current-section">Overview</div>
+      <div class="mobile-bar-title">Florida Man Racing</div>
+      <div class="mobile-bar-section" id="current-section">Team Overview</div>
     </div>
   </header>
 
   <!-- Mobile bottom tab bar (< 900px) -->
   <nav class="tabbar" aria-label="Sections">
-    <a class="tab" href="#overview" data-tab="home"><span class="tab-pill"><svg width="22" height="22" class="tab-icon" aria-hidden="true"><use href="#i-home"/></svg></span><span class="tab-label">Home</span></a>
-    <a class="tab" href="#cup-results" data-tab="cup"><span class="tab-pill"><svg width="22" height="22" class="tab-icon" aria-hidden="true"><use href="#i-results"/></svg></span><span class="tab-label">Cup</span></a>
-    <a class="tab" href="#trucks" data-tab="trucks"><span class="tab-pill"><svg width="22" height="22" class="tab-icon" aria-hidden="true"><use href="#i-truck"/></svg></span><span class="tab-label">Trucks</span></a>
-    <a class="tab" href="#kansas" data-tab="plans"><span class="tab-pill"><svg width="22" height="22" class="tab-icon" aria-hidden="true"><use href="#i-plan"/></svg></span><span class="tab-label">Plans</span></a>
-    <a class="tab" href="#links" data-tab="more"><span class="tab-pill"><svg width="22" height="22" class="tab-icon" aria-hidden="true"><use href="#i-more"/></svg></span><span class="tab-label">More</span></a>
+    <a class="tab" href="#overview" data-tab="home"><span class="tab-pill"><svg class="tab-icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-home"/></svg></span><span class="tab-label">Home</span></a>
+    <a class="tab" href="#team" data-tab="team"><span class="tab-pill"><svg class="tab-icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-team"/></svg></span><span class="tab-label">Team</span></a>
+    <a class="tab" href="#cup-schedule" data-tab="cup"><span class="tab-pill"><svg class="tab-icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-results"/></svg></span><span class="tab-label">Cup</span></a>
+    <a class="tab" href="#trucks" data-tab="trucks"><span class="tab-pill"><svg class="tab-icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-truck"/></svg></span><span class="tab-label">Trucks</span></a>
+    <a class="tab" href="#rules" data-tab="more"><span class="tab-pill"><svg class="tab-icon" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-more"/></svg></span><span class="tab-label">More</span></a>
   </nav>
 
-  <main class="container" id="main">
-    <section id="overview" class="section">
+  <main class="container" id="main" tabindex="-1">
+    <section id="overview" class="section" aria-labelledby="overview-h">
       <div class="section-head">
-        <h2>Overview</h2>
-        <p class="muted" id="driver-meta"></p>
+        <h2 id="overview-h">Team Overview</h2>
+        <p class="muted" id="overview-meta"></p>
       </div>
-      <div class="overview-grid" id="overview-cards"></div>
+      <div class="next-grid" id="next-races"></div>
+      <div class="standings-grid" id="team-standings"></div>
+      <div id="playoff-picture"></div>
     </section>
 
-    <section id="goals" class="section">
+    <section id="goals" class="section" aria-labelledby="goals-h">
       <div class="section-head">
-        <h2>Season Goals &amp; Pillars</h2>
+        <h2 id="goals-h">Team Goals</h2>
+        <p class="muted" id="goals-meta"></p>
       </div>
-      <div class="goals-grid" id="goals-block"></div>
+      <div id="goals-block"></div>
     </section>
 
-    <section id="cup-results" class="section">
+    <section id="team" class="section" aria-labelledby="team-h">
       <div class="section-head">
-        <h2>Cup Results</h2>
+        <h2 id="team-h">Drivers</h2>
+        <p class="muted" id="team-meta"></p>
+      </div>
+      <div class="driver-grid" id="driver-cards"></div>
+    </section>
+
+    <section id="cup-results" class="section" aria-labelledby="cup-results-h">
+      <div class="section-head">
+        <h2 id="cup-results-h">Team Results</h2>
         <p class="muted" id="cup-series-label"></p>
       </div>
       <div class="table-wrap">
-        <table class="data-table" id="cup-results-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-              <th>Quali</th>
-              <th>Finish</th>
-              <th>Inc</th>
-              <th>Pts</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+        <table class="data-table team-table" id="cup-team-table"></table>
       </div>
+      <p class="table-key muted">Each cell: finish, then qualifying position and incidents. Green = top-10 · amber = 4x+ · red = 8x+.</p>
     </section>
 
-    <section id="cup-schedule" class="section">
+    <section id="cup-schedule" class="section" aria-labelledby="cup-schedule-h">
       <div class="section-head">
-        <h2>Cup Schedule</h2>
-        <p class="muted">Upcoming races · chase flags highlighted</p>
+        <h2 id="cup-schedule-h">Cup Schedule</h2>
+        <p class="muted">Regular season + playoffs · team finishes on completed races</p>
       </div>
       <div class="schedule-list" id="cup-schedule-list"></div>
     </section>
 
-    <section id="kansas" class="section">
+    <section id="debriefs" class="section" aria-labelledby="debriefs-h">
       <div class="section-head">
-        <h2>Kansas Debrief</h2>
-        <p class="muted" id="kansas-meta"></p>
+        <h2 id="debriefs-h">Race Debriefs</h2>
+        <p class="muted" id="debriefs-meta"></p>
       </div>
-      <div id="kansas-block"></div>
+      <div id="debriefs-block"></div>
     </section>
 
-    <section id="qualcomm" class="section">
+    <section id="practice" class="section" aria-labelledby="practice-h">
       <div class="section-head">
-        <h2>Qualcomm Practice Plan</h2>
-        <p class="muted" id="qualcomm-meta"></p>
+        <h2 id="practice-h">Practice Plans</h2>
+        <p class="muted" id="practice-meta"></p>
       </div>
-      <div id="qualcomm-block"></div>
+      <div id="practice-block"></div>
     </section>
 
-    <section id="trucks" class="section">
+    <section id="trucks" class="section" aria-labelledby="trucks-h">
       <div class="section-head">
-        <h2>Trucks</h2>
+        <h2 id="trucks-h">Trucks · Season 14</h2>
         <p class="muted" id="trucks-series-label"></p>
       </div>
-      <div id="trucks-summary" class="trucks-summary"></div>
-      <div class="table-wrap" style="margin-top:1.25rem">
-        <table class="data-table" id="trucks-results-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-              <th>Quali</th>
-              <th>Finish</th>
-              <th>Inc</th>
-              <th>Pts</th>
-              <th>Rating</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <div class="table-wrap">
+        <table class="data-table team-table" id="trucks-team-table"></table>
       </div>
     </section>
 
-    <section id="links" class="section">
+    <section id="trucks-schedule" class="section" aria-labelledby="trucks-schedule-h">
       <div class="section-head">
-        <h2>Links</h2>
+        <h2 id="trucks-schedule-h">Trucks · Next Season</h2>
+        <p class="muted" id="trucks-next-meta"></p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="trucks-next-table"></table>
+      </div>
+    </section>
+
+    <section id="rules" class="section" aria-labelledby="rules-h">
+      <div class="section-head">
+        <h2 id="rules-h">Team Rules</h2>
+        <p class="muted">Quick reference from the league sporting codes</p>
+      </div>
+      <div class="rules-grid" id="rules-block"></div>
+    </section>
+
+    <section id="links" class="section" aria-labelledby="links-h">
+      <div class="section-head">
+        <h2 id="links-h">Links</h2>
       </div>
       <div class="links-grid" id="links-block"></div>
     </section>
+
   </main>
 
   <footer class="footer">
-    <span>Bonfire League · Race Coach Dashboard</span>
+    <span>Florida Man Racing · Bonfire Racing League · Race Coach</span>
   </footer>
 
-  <script src="./app.js?v=1791558071"></script>
+  <script src="./app.js?v=1791565995"></script>
 </body>
 </html>
