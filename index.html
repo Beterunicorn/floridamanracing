@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Race Coach · Jake Johnson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar" id="top">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <div class="brand-title">Race Coach</div>
+          <div class="brand-sub" id="driver-name">Jake Johnson</div>
+        </div>
+      </div>
+      <nav class="nav" id="nav">
+        <a href="#overview">Overview</a>
+        <a href="#goals">Goals</a>
+        <a href="#cup-results">Cup Results</a>
+        <a href="#cup-schedule">Schedule</a>
+        <a href="#kansas">Kansas</a>
+        <a href="#qualcomm">Qualcomm</a>
+        <a href="#trucks">Trucks</a>
+        <a href="#links">Links</a>
+      </nav>
+      <div class="updated" id="last-updated">—</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview" class="section">
+      <div class="section-head">
+        <h2>Overview</h2>
+        <p class="muted" id="driver-meta"></p>
+      </div>
+      <div class="overview-grid" id="overview-cards"></div>
+    </section>
+
+    <section id="goals" class="section">
+      <div class="section-head">
+        <h2>Season Goals &amp; Pillars</h2>
+      </div>
+      <div class="goals-grid" id="goals-block"></div>
+    </section>
+
+    <section id="cup-results" class="section">
+      <div class="section-head">
+        <h2>Cup Results</h2>
+        <p class="muted" id="cup-series-label"></p>
+      </div>
+      <div class="table-wrap">
+        <table class="data-table" id="cup-results-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Quali</th>
+              <th>Finish</th>
+              <th>Inc</th>
+              <th>Pts</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="cup-schedule" class="section">
+      <div class="section-head">
+        <h2>Cup Schedule</h2>
+        <p class="muted">Upcoming races · chase flags highlighted</p>
+      </div>
+      <div class="schedule-list" id="cup-schedule-list"></div>
+    </section>
+
+    <section id="kansas" class="section">
+      <div class="section-head">
+        <h2>Kansas Debrief</h2>
+        <p class="muted" id="kansas-meta"></p>
+      </div>
+      <div id="kansas-block"></div>
+    </section>
+
+    <section id="qualcomm" class="section">
+      <div class="section-head">
+        <h2>Qualcomm Practice Plan</h2>
+        <p class="muted" id="qualcomm-meta"></p>
+      </div>
+      <div id="qualcomm-block"></div>
+    </section>
+
+    <section id="trucks" class="section">
+      <div class="section-head">
+        <h2>Trucks</h2>
+        <p class="muted" id="trucks-series-label"></p>
+      </div>
+      <div id="trucks-summary" class="trucks-summary"></div>
+      <div class="table-wrap" style="margin-top:1.25rem">
+        <table class="data-table" id="trucks-results-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Quali</th>
+              <th>Finish</th>
+              <th>Inc</th>
+              <th>Pts</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="links" class="section">
+      <div class="section-head">
+        <h2>Links</h2>
+      </div>
+      <div class="links-grid" id="links-block"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Bonfire League · Race Coach Dashboard</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
