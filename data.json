@@ -1003,7 +1003,7 @@
   },
   "coaching": {
     "goals": {
-      "cup": "Top-12 playoff (now P18, 34 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
+      "cup": "Top-12 playoff (now P18, 43 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
       "trucks": "Season 14 done — next season starts Oct 13 Kentucky; no trucks race this weekend. Aim clean car, mid-pack+ finishes."
     },
     "pillars": [
@@ -1127,13 +1127,12 @@
     },
     "weekly_focus": "Post-Qualcomm (2026-10-04): Q8→P12, 0x, +31 pts. Cup P19 / 247 pts — 34 behind playoff cut (P12 Brenner, David). Next: Charlotte 2026-10-11. Trucks off until 2026-10-13 Kentucky.",
     "next_cup": {
-      "race_date": "2026-10-11",
-      "track": "Charlotte Motor Speedway",
-      "targets": "Top-15 quali, mid-teens+ finish, under 4x",
-      "note": "Next Cup after Qualcomm — oval reset; lock fuel from bible (over 1 mile → 70%)."
+      "race_date": "2026-10-18",
+      "track": "Phoenix Raceway",
+      "note": "Fuel: confirm in lobby (1.0 mi)"
     },
     "fuel": {
-      "updated": "2026-10-04",
+      "updated": "2026-10-11",
       "notes": "League fuel windows confirmed by Jake 2026-10-04. Percent is start fuel.",
       "cup": {
         "season_id": "30123",
@@ -1153,6 +1152,14 @@
             "fuel_start_pct": 70,
             "rule": "over 1 mile",
             "confirmed": "2026-10-04"
+          },
+          "charlotte": {
+            "fuel_start_pct": 70,
+            "fuel_gal": 14,
+            "burn_gal_per_lap": "0.30-0.33",
+            "rule": "over 1 mile",
+            "confirmed": "2026-10-11",
+            "source": "Jake Garage 61, Charlotte Cup 2026-10-11"
           }
         }
       },
@@ -1204,6 +1211,116 @@
         "target": "under 5x, finish all laps"
       },
       "playoff": "9 of 14 starts; Charlotte start clinches eligibility; ~34 pts back of cut"
+    },
+    "charlotte": {
+      "date": "2026-10-11",
+      "series": "Bonfire Premier Cup",
+      "laps": 115,
+      "simracerhub": {
+        "race_id": "384663"
+      },
+      "source": "Jake's Garage 61 data",
+      "reported": "Taken out in a wreck on lap 107 of 115 after running his fastest lap of the race on lap 106.",
+      "fastest_lap": {
+        "time": "29.624",
+        "lap": 106,
+        "note": "right before the wreck"
+      },
+      "event_fastest": [
+        [
+          "Ricky Mandella",
+          "29.237"
+        ],
+        [
+          "Gerald Rose",
+          "29.267"
+        ],
+        [
+          "Rick Modrich",
+          "29.276"
+        ]
+      ],
+      "stints": [
+        {
+          "laps": "3–36",
+          "avg": "30.698",
+          "best": "29.677",
+          "falloff": "+1.51s"
+        },
+        {
+          "laps": "39–49",
+          "avg": "30.241",
+          "best": "30.046",
+          "falloff": "minimal"
+        },
+        {
+          "laps": "55–79",
+          "avg": "30.651",
+          "best": "29.890",
+          "falloff": "+1.13s"
+        },
+        {
+          "laps": "82–100",
+          "avg": "30.329",
+          "best": "29.913",
+          "falloff": "+0.77s"
+        }
+      ],
+      "stops": [
+        {
+          "lap": 37,
+          "time": "11.13s",
+          "fuel": "10.99 gal",
+          "note": ""
+        },
+        {
+          "lap": 80,
+          "time": "11.15s",
+          "fuel": "9.09 gal",
+          "note": ""
+        },
+        {
+          "lap": 102,
+          "time": "10.92s",
+          "fuel": null,
+          "note": "under caution"
+        }
+      ],
+      "fuel": "Burn ~0.30 gal/lap; 70% start = 14 gal ≈ 42–45 laps per tank",
+      "end": "Lap 107 36.233 (invalid, wreck); lap 108 ended on pit road",
+      "takeaways": [
+        "Race pace was there",
+        "Long-run tire falloff (1.1–1.5s late in runs) is the main lever",
+        "Stops and strategy executed to plan"
+      ],
+      "practice": {
+        "date": "2026-10-10",
+        "label": "Sat Oct 10 offline testing",
+        "best": "29.558",
+        "best_lap": 24,
+        "s1": "14.620",
+        "s2": "14.947",
+        "fixes": [
+          "No brake into Turn 3",
+          "Less steering",
+          "Earlier throttle"
+        ],
+        "league_practice_best": "29.687",
+        "quali": "29.915"
+      }
+    },
+    "phoenix": {
+      "race_date": "2026-10-18",
+      "track": "Phoenix Raceway — ~1-mile oval",
+      "series": "Bonfire Premier Cup",
+      "fuel": "Phoenix is exactly 1.0 mi — rule is 55% under 1 mi, 70% over",
+      "apron": "Apron at the dogleg is legal",
+      "focus": [
+        "30-lap long-run practice stint: keep laps 20–30 within 0.6s of best",
+        "Lift earlier and smoother into the corners, with less steering",
+        "Back off once the car starts pushing"
+      ],
+      "why": "Charlotte long-run falloff was 1.1–1.5s late in runs"
     }
   },
   "team": {
@@ -1219,11 +1336,11 @@
         "srh_name": "Jake M Johnson",
         "cup": {
           "position": 18,
-          "points": 247,
-          "starts": 9,
-          "avg_finish": 15.3,
-          "avg_quali": 16.1,
-          "total_incidents": 33,
+          "points": 269,
+          "starts": 10,
+          "avg_finish": 15.8,
+          "avg_quali": 16.6,
+          "total_incidents": 37,
           "inc_per_race": 3.7,
           "top10s": 2,
           "top5s": 0,
@@ -1235,7 +1352,7 @@
           "laps_led": 10,
           "disconnects": 0,
           "places_gained_avg": 0.8,
-          "avg_rating": 77.4
+          "avg_rating": 77.6
         },
         "trucks": {
           "position": 25,
@@ -1258,31 +1375,21 @@
           "avg_rating": 65.0
         },
         "playoff": {
-          "starts": 9,
-          "races_run": 11,
-          "races_remaining": 3,
-          "starts_needed": 1,
+          "starts": 10,
+          "races_run": 12,
+          "races_remaining": 2,
+          "starts_needed": 0,
           "max_starts": 12,
-          "start_min_met": false,
+          "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
           "position": 18,
-          "points": 247,
-          "gap_to_p12": 34,
+          "points": 269,
+          "gap_to_p12": 43,
           "positions_to_p12": 6,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-13",
-            "track": "Gateway",
-            "quali": 15,
-            "finish": 23,
-            "incidents": 4,
-            "points": 19,
-            "laps_led": 0,
-            "status": "Running"
-          },
           {
             "date": "2026-09-27",
             "track": "Kansas",
@@ -1302,15 +1409,25 @@
             "points": 31,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-11",
+            "track": "Charlotte",
+            "quali": 21,
+            "finish": 20,
+            "incidents": 4,
+            "points": 22,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
           "2 top-10s; best P6 (Kansas)",
-          "5 of 9 races at 0–2x"
+          "5 of 10 races at 0–2x"
         ],
         "focus": [
-          "Avg start P16.1 → avg finish P15.3 (+0.8 spots per race)",
-          "Incidents: 3.7x per race (33x total)"
+          "Avg start P16.6 → avg finish P15.8 (+0.8 spots per race)",
+          "Incidents: 3.7x per race (37x total)"
         ]
       },
       {
@@ -1321,51 +1438,41 @@
         "srh_name": "Todd Dunn",
         "cup": {
           "position": 23,
-          "points": 194,
-          "starts": 10,
-          "avg_finish": 22.8,
-          "avg_quali": 25.3,
+          "points": 218,
+          "starts": 11,
+          "avg_finish": 22.5,
+          "avg_quali": 25,
           "total_incidents": 64,
-          "inc_per_race": 6.4,
+          "inc_per_race": 5.8,
           "top10s": 1,
           "top5s": 0,
           "wins": 0,
           "best_finish": 8,
           "best_finish_track": "Daytona",
-          "clean_races": 2,
-          "low_inc_races": 3,
+          "clean_races": 3,
+          "low_inc_races": 4,
           "laps_led": 0,
           "disconnects": 1,
           "places_gained_avg": 2.5,
-          "avg_rating": 62.6
+          "avg_rating": 63.5
         },
         "trucks": null,
         "playoff": {
-          "starts": 10,
-          "races_run": 11,
-          "races_remaining": 3,
+          "starts": 11,
+          "races_run": 12,
+          "races_remaining": 2,
           "starts_needed": 0,
           "max_starts": 13,
           "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
           "position": 23,
-          "points": 194,
-          "gap_to_p12": 87,
+          "points": 218,
+          "gap_to_p12": 94,
           "positions_to_p12": 11,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-13",
-            "track": "Gateway",
-            "quali": 27,
-            "finish": 26,
-            "incidents": 2,
-            "points": 16,
-            "laps_led": 0,
-            "status": "Running"
-          },
           {
             "date": "2026-09-27",
             "track": "Kansas",
@@ -1385,16 +1492,26 @@
             "points": 20,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-11",
+            "track": "Charlotte",
+            "quali": 22,
+            "finish": 19,
+            "incidents": 0,
+            "points": 24,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
-          "Avg start P25.3 → avg finish P22.8 (+2.5 spots per race)",
+          "Avg start P25 → avg finish P22.5 (+2.5 spots per race)",
           "1 top-10; best P8 (Daytona)",
-          "3 of 10 races at 0–2x"
+          "4 of 11 races at 0–2x"
         ],
         "focus": [
-          "Incidents: 6.4x per race (64x total)",
-          "Qualifying: avg grid P25.3",
+          "Incidents: 5.8x per race (64x total)",
+          "Qualifying: avg grid P25",
           "1 disconnect this season"
         ]
       },
@@ -1406,23 +1523,23 @@
         "srh_name": "Timothy Darby",
         "cup": {
           "position": 24,
-          "points": 182,
-          "starts": 9,
-          "avg_finish": 21.9,
-          "avg_quali": 28.6,
+          "points": 207,
+          "starts": 10,
+          "avg_finish": 21.5,
+          "avg_quali": 28.2,
           "total_incidents": 84,
-          "inc_per_race": 9.3,
+          "inc_per_race": 8.4,
           "top10s": 0,
           "top5s": 0,
           "wins": 0,
           "best_finish": 15,
           "best_finish_track": "Bristol",
-          "clean_races": 1,
-          "low_inc_races": 2,
+          "clean_races": 2,
+          "low_inc_races": 3,
           "laps_led": 0,
           "disconnects": 1,
           "places_gained_avg": 6.7,
-          "avg_rating": 57.9
+          "avg_rating": 58.5
         },
         "trucks": {
           "position": 35,
@@ -1445,31 +1562,21 @@
           "avg_rating": 58.8
         },
         "playoff": {
-          "starts": 9,
-          "races_run": 11,
-          "races_remaining": 3,
-          "starts_needed": 1,
+          "starts": 10,
+          "races_run": 12,
+          "races_remaining": 2,
+          "starts_needed": 0,
           "max_starts": 12,
-          "start_min_met": false,
+          "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
           "position": 24,
-          "points": 182,
-          "gap_to_p12": 99,
+          "points": 207,
+          "gap_to_p12": 105,
           "positions_to_p12": 12,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-20",
-            "track": "Bristol",
-            "quali": 19,
-            "finish": 15,
-            "incidents": 20,
-            "points": 27,
-            "laps_led": 0,
-            "status": "Running"
-          },
           {
             "date": "2026-09-27",
             "track": "Kansas",
@@ -1489,15 +1596,25 @@
             "points": 18,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-11",
+            "track": "Charlotte",
+            "quali": 25,
+            "finish": 18,
+            "incidents": 0,
+            "points": 25,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
-          "Avg start P28.6 → avg finish P21.9 (+6.7 spots per race)",
-          "2 of 9 races at 0–2x"
+          "Avg start P28.2 → avg finish P21.5 (+6.7 spots per race)",
+          "3 of 10 races at 0–2x"
         ],
         "focus": [
-          "Incidents: 9.3x per race (84x total)",
-          "Qualifying: avg grid P28.6",
+          "Incidents: 8.4x per race (84x total)",
+          "Qualifying: avg grid P28.2",
           "1 disconnect this season"
         ]
       }
@@ -1507,13 +1624,9 @@
       "season_name": "Season 16",
       "season_id": "30123",
       "field_size": 48,
-      "races_run": 11,
+      "races_run": 12,
       "regular_season_races": 14,
       "regular_season_remaining": [
-        {
-          "date": "2026-10-11",
-          "track": "Charlotte"
-        },
         {
           "date": "2026-10-18",
           "track": "Phoenix"
@@ -1524,24 +1637,31 @@
         }
       ],
       "p12": {
-        "name": "David Brenner",
-        "points": 281
+        "name": "Zeth Hawley",
+        "points": 312
       },
       "leader": {
         "name": "Joseph Vulpis",
-        "points": 418
+        "points": 437
       },
       "winners_outside_top12": [
         {
-          "name": "Paul Ferdiani",
-          "position": 20,
+          "name": "Jared Kelly2",
+          "position": 15,
           "wins": 1,
-          "starts": 10,
+          "starts": 8,
+          "can_reach_10_starts": true
+        },
+        {
+          "name": "Paul Ferdiani",
+          "position": 19,
+          "wins": 1,
+          "starts": 11,
           "can_reach_10_starts": true
         },
         {
           "name": "Jason Landry",
-          "position": 36,
+          "position": 37,
           "wins": 2,
           "starts": 2,
           "can_reach_10_starts": false
@@ -1894,6 +2014,40 @@
               "status": "Running"
             }
           }
+        },
+        {
+          "race_id": "384663",
+          "date": "2026-10-11",
+          "track": "Charlotte",
+          "track_full": "Charlotte Motor Speedway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 21,
+              "finish": 20,
+              "incidents": 4,
+              "points": 22,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 22,
+              "finish": 19,
+              "incidents": 0,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 25,
+              "finish": 18,
+              "incidents": 0,
+              "points": 25,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
         }
       ],
       "schedule": [
@@ -2227,11 +2381,36 @@
         },
         {
           "date": "2026-10-11",
-          "race_id": null,
+          "race_id": "384663",
           "chase": false,
           "event": "Charlotte",
           "track_full": "Charlotte Motor Speedway",
-          "team": null
+          "team": {
+            "jake": {
+              "quali": 21,
+              "finish": 20,
+              "incidents": 4,
+              "points": 22,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 22,
+              "finish": 19,
+              "incidents": 0,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 25,
+              "finish": 18,
+              "incidents": 0,
+              "points": 25,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
         },
         {
           "date": "2026-10-18",
@@ -2921,12 +3100,12 @@
       {
         "series": "Cup",
         "series_name": "Bonfire Premier Cup",
-        "date": "2026-10-11",
-        "day": "Sun",
-        "track": "Charlotte Motor Speedway",
+        "date": "2026-10-18",
+        "track": "Phoenix Raceway",
         "facts": [
-          "Race 12 of 14 (regular season)",
-          "Fuel: 70% start (oval over 1 mi)",
+          "Race 13 of 14 (regular season)",
+          "Fuel: confirm in lobby (exactly 1.0 mi; 55% under 1 mi / 70% over)",
+          "Apron legal at the dogleg",
           "4 extra tire sets"
         ]
       },

@@ -223,10 +223,10 @@
       <div class="card team-goals">
         <div class="card-label">Team</div>
         <ul class="check-list">
-          <li><strong>Cup eligibility:</strong> all three drivers to 10 of 14 starts${
+          ${need.length === 0 ? `<li><strong>Cup eligibility:</strong> all three drivers have 10+ of 14 starts — start minimum met.</li>` : `<li><strong>Cup eligibility:</strong> all three drivers to 10 of 14 starts${
             met.length ? ` (done: ${escapeHtml(met.join(", "))}` : " ("
-          }${need.length ? `${met.length ? "; " : ""}still needed: ${escapeHtml(need.join(", "))}` : ""}).</li>
-          <li><strong>Charlotte, Phoenix, Las Vegas:</strong> three cars starting and running at the finish.</li>
+          }${need.length ? `${met.length ? "; " : ""}still needed: ${escapeHtml(need.join(", "))}` : ""}).</li>`}
+          <li><strong>${escapeHtml(team.cup.regular_season_remaining.map((r) => r.track).join(", "))}:</strong> three cars starting and running at the finish.</li>
           <li><strong>Trucks next season:</strong> 10 of 13 starts each; points-only playoffs, so every finish counts.</li>
           <li><strong>Incidents:</strong> stay clear of the drive-through limits (Cup 21x, Trucks 17x on ovals).</li>
         </ul>
@@ -367,11 +367,67 @@
       .join("")}</div>`;
   }
 
+  function charlotteDebrief(data) {
+    const c = data.coaching.charlotte;
+    if (!c) return "";
+    const p = c.practice;
+    return `
+      <div class="debrief" id="debrief-charlotte">
+        <h3 class="sub-title">Charlotte <span class="muted">· ${fmtDate(c.date)} · ${escapeHtml(c.series)} · ${c.laps} laps</span></h3>
+        ${teamStrip(data.team, c.simracerhub.race_id)}
+        <div class="kansas-grid">
+          <div class="card">
+            <div class="card-label">Jake · Garage 61 race data</div>
+            <div class="kansas-reported" style="color:var(--text)">${escapeHtml(c.reported)}</div>
+            <div class="g61-stats">
+              <div class="g61-stat"><span class="stat-val mono green">${escapeHtml(c.fastest_lap.time)}</span><span class="stat-lbl">Fastest race lap · lap ${c.fastest_lap.lap}</span></div>
+              <div class="g61-stat"><span class="stat-val mono">${escapeHtml(c.event_fastest[0][1])}</span><span class="stat-lbl">Event fastest · ${escapeHtml(c.event_fastest[0][0])}</span></div>
+            </div>
+            <p class="muted" style="font-size:0.8rem;margin-bottom:0.85rem">Event fastest laps: ${c.event_fastest
+              .map(([n, t]) => `${escapeHtml(n)} ${escapeHtml(t)}`)
+              .join(" · ")}</p>
+            <div class="subhead">Stints (green-lap avg / best / falloff, first 3 vs last 3)</div>
+            <div class="table-wrap mini-wrap">
+              <table class="data-table mini-table">
+                <thead><tr><th scope="col">Laps</th><th scope="col">Avg</th><th scope="col">Best</th><th scope="col">Falloff</th></tr></thead>
+                <tbody>${c.stints
+                  .map(
+                    (st) => `<tr><td class="mono">${escapeHtml(st.laps)}</td><td class="mono">${escapeHtml(st.avg)}</td><td class="mono">${escapeHtml(st.best)}</td><td class="mono ${/^\+1/.test(st.falloff) ? "inc-red" : /^\+/.test(st.falloff) ? "inc-amber" : ""}">${escapeHtml(st.falloff)}</td></tr>`
+                  )
+                  .join("")}</tbody>
+              </table>
+            </div>
+            <div class="subhead" style="margin-top:0.9rem">Pit stops</div>
+            <ul class="form-list">${c.stops
+              .map(
+                (st) => `<li><span class="form-date mono">Lap ${st.lap}</span><span class="form-track">${escapeHtml(st.note || st.fuel || "")}</span><span class="mono">${escapeHtml(st.time)}</span></li>`
+              )
+              .join("")}</ul>
+            <p class="muted" style="font-size:0.8rem;margin-top:0.6rem">${escapeHtml(c.fuel)}. ${escapeHtml(c.end)}.</p>
+          </div>
+          <div class="card">
+            <div class="card-label">Jake · takeaways</div>
+            <ul class="check-list">${c.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>
+            <div class="subhead" style="margin-top:1rem">Prep · ${escapeHtml(p.label)}</div>
+            <div class="g61-stats">
+              <div class="g61-stat"><span class="stat-val mono green">${escapeHtml(p.best)}</span><span class="stat-lbl">Offline best · lap ${p.best_lap}</span></div>
+              <div class="g61-stat"><span class="stat-val mono">${escapeHtml(p.s1)} / ${escapeHtml(p.s2)}</span><span class="stat-lbl">S1 / S2 on that lap</span></div>
+              <div class="g61-stat"><span class="stat-val mono">${escapeHtml(p.league_practice_best)}</span><span class="stat-lbl">League-day practice best</span></div>
+              <div class="g61-stat"><span class="stat-val mono">${escapeHtml(p.quali)}</span><span class="stat-lbl">Quali lap</span></div>
+            </div>
+            <div class="subhead">Key fixes found in testing</div>
+            <ul class="gap-list">${p.fixes.map((f) => `<li>${escapeHtml(f)}</li>`).join("")}</ul>
+          </div>
+        </div>
+      </div>`;
+  }
+
   function renderDebriefs(data) {
     const k = data.coaching.kansas;
     const q = data.coaching.qualcomm;
     document.getElementById("debriefs-meta").textContent = "Most recent Cup races · team results, then notes";
     document.getElementById("debriefs-block").innerHTML = `
+      ${charlotteDebrief(data)}
       <div class="debrief">
         <h3 class="sub-title">Qualcomm Circuit <span class="muted">· ${fmtDate(q.race_date)} · ${escapeHtml(data.team.cup.series_name)}</span></h3>
         ${teamStrip(data.team, q.simracerhub.race_id)}
@@ -413,34 +469,32 @@
 
   function renderPractice(data) {
     const q = data.coaching.qualcomm;
-    const b = data.coaching.race_week_brief_2026_10_09;
-    document.getElementById("practice-meta").textContent = "This week's team prep, plus the last race-week plan";
+    const ph = data.coaching.phoenix;
+    document.getElementById("practice-meta").textContent = "Next race focus, plus the earlier race-week plan";
     let brief = "";
-    if (b) {
-      const t = b.cup.targets || {};
+    if (ph) {
       brief = `
-        <div class="card card-next qc-intro">
-          <div class="card-label">Race week · ${escapeHtml(b.cup.race)} · team</div>
+        <div class="card card-next qc-intro" id="phoenix-focus">
+          <div class="card-label">Race week · ${escapeHtml(fmtDow(ph.race_date))} · ${escapeHtml(ph.track)}</div>
           <div class="list-cols">
             <div>
-              <div class="subhead">Practice priorities</div>
-              <ul class="check-list">${b.cup.practice.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
+              <div class="subhead">Practice focus</div>
+              <ul class="check-list">${ph.focus.map((p) => `<li>${escapeHtml(p)}</li>`).join("")}</ul>
             </div>
             <div>
-              <div class="subhead">Fuel</div>
-              <p class="qc-focus">${escapeHtml(b.cup.fuel)}</p>
-              <div class="subhead">Restart cue</div>
-              <p class="qc-focus">${escapeHtml(b.cup.cue)}</p>
+              <div class="subhead">Fuel <span class="chip chip-amber">Confirm in lobby</span></div>
+              <p class="qc-focus">${escapeHtml(ph.fuel)}</p>
+              <div class="subhead" style="margin-top:0.6rem">Apron</div>
+              <p class="qc-focus">${escapeHtml(ph.apron)}</p>
             </div>
           </div>
-          <div class="card-note">Jake's targets: quali ${escapeHtml(t.quali)}, finish ${escapeHtml(t.finish)}, ${escapeHtml(t.incidents)}.
-          Trucks: ${escapeHtml(b.trucks.race)}.</div>
+          <div class="card-note">Why: ${escapeHtml(ph.why)} (Jake's Garage 61 data).</div>
         </div>`;
     }
     document.getElementById("practice-block").innerHTML = `
       ${brief}
       <div class="card qc-intro">
-        <div class="card-label">Jake · Qualcomm week plan · ${fmtDate(q.race_date)}</div>
+        <div class="card-label">Earlier · Jake’s Qualcomm week plan · ${fmtDate(q.race_date)}</div>
         <div class="qc-track">${escapeHtml(q.track)}</div>
         <div class="qc-focus"><strong>Focus:</strong> ${escapeHtml(q.focus)}</div>
         <div class="qc-targets">Targets: ${escapeHtml(q.targets)}</div>
