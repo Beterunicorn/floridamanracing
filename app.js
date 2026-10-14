@@ -426,7 +426,13 @@
     const k = data.coaching.kansas;
     const q = data.coaching.qualcomm;
     document.getElementById("debriefs-meta").textContent = "Most recent Cup races · team results, then notes";
+    const kd = data.team.trucks && data.team.trucks.debrief;
     document.getElementById("debriefs-block").innerHTML = `
+      ${kd ? `<div class="debrief" id="debrief-kentucky">
+        <h3 class="sub-title">Kentucky <span class="muted">· ${fmtDate(kd.date)} · ${escapeHtml(data.team.trucks.series_name)} · ${kd.laps} laps (${kd.scheduled_laps} sched.) · ${kd.field} starters</span></h3>
+        <div class="card"><div class="card-label">Team debrief · winner ${escapeHtml(kd.winner)}</div>
+        <ul class="check-list">${kd.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul></div>
+      </div>` : ""}
       ${charlotteDebrief(data)}
       <div class="debrief">
         <h3 class="sub-title">Qualcomm Circuit <span class="muted">· ${fmtDate(q.race_date)} · ${escapeHtml(data.team.cup.series_name)}</span></h3>
