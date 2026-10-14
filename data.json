@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-11",
+  "updated": "2026-10-13",
   "driver": {
     "name": "Jake M Johnson",
     "custid": "1078383",
@@ -1105,7 +1105,7 @@
       "status": "race complete — coach debrief pending"
     },
     "trucks_next": {
-      "next_race": "2026-10-13 Kentucky",
+      "next_race": "2026-10-20 Daytona",
       "this_weekend": false,
       "slate": [
         "Kentucky",
@@ -1118,18 +1118,18 @@
         "Michigan",
         "Iowa"
       ],
-      "note": "Big Trucking Tuesday Season 14 complete (P27, 16 starts, 0 top-10s, 101 incidents). No trucks race this weekend. New slate starts 2026-10-13 Kentucky (typically 7 / 7:50 PM CST)."
+      "note": "New Big Trucking Tuesday slate: R1 Kentucky was 2026-10-13 (SimRacerHub Season 15 not published yet as of 2026-10-13 night). Next: 2026-10-20 Daytona 80 laps / 200 mi (4 tire sets), typically 7 / 7:50 PM CST."
     },
     "links": {
       "garage61": "https://garage61.net/app/drivers/jake-johnson-2",
       "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
       "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=29499"
     },
-    "weekly_focus": "Post-Qualcomm (2026-10-04): Q8→P12, 0x, +31 pts. Cup P19 / 247 pts — 34 behind playoff cut (P12 Brenner, David). Next: Charlotte 2026-10-11. Trucks off until 2026-10-13 Kentucky.",
+    "weekly_focus": "Post-Charlotte Cup (2026-10-11): Q21→P20, 4x, +22 pts (taken out lap 107). Cup P18 / 269 pts — 43 behind playoff cut (P12 Zeth Hawley 312). Start min met (10/10). Next Cup: Phoenix 2026-10-18. Trucks: Kentucky R1 was tonight; next Daytona 2026-10-20.",
     "next_cup": {
       "race_date": "2026-10-18",
       "track": "Phoenix Raceway",
-      "note": "Fuel: confirm in lobby (1.0 mi)"
+      "note": "Fuel: confirm in lobby (exactly 1.0 mi; 55% under / 70% over)"
     },
     "fuel": {
       "updated": "2026-10-11",
@@ -3112,13 +3112,13 @@
       {
         "series": "Trucks",
         "series_name": "Big Trucking Tuesday",
-        "date": "2026-10-13",
+        "date": "2026-10-20",
         "day": "Tue",
-        "track": "Kentucky Speedway",
+        "track": "Daytona International Speedway",
         "facts": [
-          "New season · Round 1 · crown jewel",
-          "150 laps / 225 mi",
-          "5 tire sets"
+          "New season · Round 2",
+          "80 laps / 200 mi",
+          "4 tire sets"
         ]
       }
     ],
