@@ -1004,7 +1004,7 @@
   "coaching": {
     "goals": {
       "cup": "Top-12 playoff (now P18, 43 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
-      "trucks": "Season 14 done — next season starts Oct 13 Kentucky; no trucks race this weekend. Aim clean car, mid-pack+ finishes."
+      "trucks": "Season 15 underway — R1 Kentucky done (Jake P15). Next: Daytona Tue Oct 20 (80/200, 4 sets). 10 of 13 regular-season starts; clean finishes matter for points-only playoffs."
     },
     "pillars": [
       "Qualifying",
@@ -2617,21 +2617,26 @@
           }
         }
       ],
-      "next_season_rules": "13-race regular season · 10 of 13 starts required · playoffs on points only",
+      "next_season_rules": "13-race regular season · 10 of 13 starts required · playoffs on points only (12→8→4→championship)",
       "next_season": [
         {
           "rd": "R1",
+          "phase": "Regular",
           "date": "2026-10-13",
           "track": "Kentucky",
+          "type": "Intermediate",
           "laps": 150,
           "miles": 225,
           "tires": 5,
-          "note": "Crown jewel"
+          "note": "Crown Jewel Dennis Puckett 225 (completed)",
+          "completed": true
         },
         {
           "rd": "R2",
+          "phase": "Regular",
           "date": "2026-10-20",
           "track": "Daytona",
+          "type": "Superspeedway",
           "laps": 80,
           "miles": 200,
           "tires": 4,
@@ -2639,8 +2644,10 @@
         },
         {
           "rd": "R3",
+          "phase": "Regular",
           "date": "2026-10-27",
           "track": "North Wilkesboro",
+          "type": "Short",
           "laps": 150,
           "miles": 93.75,
           "tires": 4,
@@ -2648,80 +2655,100 @@
         },
         {
           "rd": "R4",
+          "phase": "Regular",
           "date": "2026-11-03",
           "track": "Charlotte",
+          "type": "Intermediate",
           "laps": 110,
           "miles": 165,
           "tires": 4,
-          "note": "In-Season Tournament prelim"
+          "note": "In-Season Tournament (Prelim)"
         },
         {
           "rd": "R5",
+          "phase": "Regular",
           "date": "2026-11-10",
           "track": "Indianapolis",
+          "type": "Long Flat",
           "laps": 55,
           "miles": 137.5,
           "tires": 4,
-          "note": "IST Round of 32"
+          "note": "IST (32)"
         },
         {
           "rd": "R6",
+          "phase": "Regular",
           "date": "2026-11-17",
           "track": "Nashville Superspeedway",
+          "type": "Intermediate",
           "laps": 130,
           "miles": 173,
           "tires": 4,
-          "note": "IST Round of 16"
+          "note": "IST (16)"
         },
         {
           "rd": "—",
+          "phase": "OFF",
           "date": "2026-11-24",
-          "track": "Off week",
-          "off": true
+          "track": "Thanksgiving",
+          "off": true,
+          "note": "Thanksgiving"
         },
         {
           "rd": "R7",
+          "phase": "Regular",
           "date": "2026-12-01",
           "track": "Michigan",
+          "type": "Superspeedway",
           "laps": 85,
           "miles": 170,
           "tires": 4,
-          "note": "IST Quarterfinal (8)"
+          "note": "IST (8)"
         },
         {
           "rd": "R8",
+          "phase": "Regular",
           "date": "2026-12-08",
-          "track": "Iowa",
+          "track": "Iowa (Legacy)",
+          "type": "Short",
           "laps": 120,
           "miles": 105,
           "tires": 4,
-          "note": "IST Semifinal (4)"
+          "note": "IST (4)"
         },
         {
           "rd": "R9",
+          "phase": "Regular",
           "date": "2026-12-15",
-          "track": "Atlanta",
+          "track": "Atlanta (Legacy)",
+          "type": "Intermediate",
           "laps": 115,
           "miles": 177,
           "tires": 4,
-          "note": "IST Final (2)"
+          "note": "IST (2)"
         },
         {
           "rd": "—",
+          "phase": "OFF",
           "date": "2026-12-22",
-          "track": "Off week",
-          "off": true
+          "track": "Christmas",
+          "off": true,
+          "note": "Christmas"
         },
         {
           "rd": "—",
+          "phase": "OFF",
           "date": "2026-12-29",
-          "track": "Off week",
-          "off": true
+          "track": "Christmas",
+          "off": true,
+          "note": "Christmas"
         },
         {
           "rd": "R10",
+          "phase": "Regular",
           "date": "2027-01-05",
           "track": "Sonoma",
+          "type": "Road Course",
           "laps": null,
           "miles": null,
           "tires": 4,
@@ -2729,8 +2756,10 @@
         },
         {
           "rd": "R11",
+          "phase": "Regular",
           "date": "2027-01-12",
           "track": "Las Vegas",
+          "type": "Intermediate",
           "laps": 115,
           "miles": 172.5,
           "tires": 4,
@@ -2738,8 +2767,10 @@
         },
         {
           "rd": "R12",
+          "phase": "Regular",
           "date": "2027-01-19",
           "track": "Pocono",
+          "type": "Tri-Oval",
           "laps": 55,
           "miles": 137.5,
           "tires": 4,
@@ -2747,21 +2778,77 @@
         },
         {
           "rd": "R13",
+          "phase": "Regular",
           "date": "2027-01-26",
-          "track": "TBC",
-          "laps": null,
-          "miles": null,
+          "track": "Talladega",
+          "type": "Superspeedway",
+          "laps": 80,
+          "miles": 200,
           "tires": 4,
-          "note": "Regular-season finale"
+          "note": "Regular Season Finale"
         },
         {
-          "rd": "PO",
+          "rd": "—",
+          "phase": "OFF",
+          "date": "2027-02-02",
+          "track": "Off week",
+          "off": true,
+          "note": ""
+        },
+        {
+          "rd": "R14",
+          "phase": "Playoffs(12)",
+          "date": "2027-02-09",
+          "track": "Kansas",
+          "type": "Intermediate",
+          "laps": 115,
+          "miles": 177,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R15",
+          "phase": "Playoffs(12)",
+          "date": "2027-02-16",
+          "track": "Homestead-Miami",
+          "type": "Intermediate",
+          "laps": 120,
+          "miles": 180,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R16",
+          "phase": "Playoffs(8)",
+          "date": "2027-02-23",
+          "track": "Richmond",
+          "type": "Short",
+          "laps": 130,
+          "miles": 97.5,
+          "tires": 4,
+          "note": ""
+        },
+        {
+          "rd": "R17",
+          "phase": "Playoffs(8)",
           "date": null,
-          "track": "Playoffs",
-          "laps": null,
-          "miles": null,
-          "tires": null,
-          "note": "Dates TBC"
+          "track": "Darlington",
+          "type": "Intermediate",
+          "laps": 130,
+          "miles": 174,
+          "tires": 4,
+          "note": "Date TBC"
+        },
+        {
+          "rd": "R18",
+          "phase": "Championship(4)",
+          "date": null,
+          "track": "Texas",
+          "type": "Intermediate",
+          "laps": 150,
+          "miles": 225,
+          "tires": 5,
+          "note": "Date TBC"
         }
       ]
     },
@@ -2845,7 +2932,7 @@
         ],
         [
           "Tires",
-          "4 sets unless noted (Kentucky R1: 5)"
+          "4 sets unless noted (Kentucky R1 / Texas championship: 5)"
         ],
         [
           "Incidents",

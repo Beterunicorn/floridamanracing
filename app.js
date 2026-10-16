@@ -529,17 +529,22 @@
   function renderTrucksNext(data) {
     const t = data.team.trucks;
     document.getElementById("trucks-next-meta").textContent = `${t.next_season_rules} · 4 tire sets unless noted`;
-    const nextIdx = t.next_season.findIndex((r) => !r.off && r.date && r.date >= data.updated);
+    const nextIdx = t.next_season.findIndex((r) => !r.off && !r.completed && r.date && r.date >= data.updated);
     document.getElementById("trucks-next-table").classList.add("next-table");
     document.getElementById("trucks-next-table").innerHTML = `
-      <thead><tr><th scope="col">Rd</th><th scope="col">Date</th><th scope="col">Track</th><th scope="col">Laps / Miles</th><th scope="col">Tires</th><th scope="col" class="col-notes">Notes</th></tr></thead>
+      <thead><tr><th scope="col">Rd</th><th scope="col">Phase</th><th scope="col">Date</th><th scope="col">Track</th><th scope="col">Type</th><th scope="col">Laps / Miles</th><th scope="col">Tires</th><th scope="col" class="col-notes">Notes</th></tr></thead>
       <tbody>${t.next_season
         .map((r, i) => {
-          if (r.off) return `<tr class="row-off"><td class="mono dim">—</td><td class="mono">${fmtShort(r.date)}</td><td colspan="3" class="dim">Off week</td><td class="col-notes"></td></tr>`;
-          const dist = r.laps ? `${r.laps} / ${r.miles}` : "TBC";
-          return `<tr class="${i === nextIdx ? "row-next" : ""}"><td class="mono">${escapeHtml(r.rd)}</td><td class="mono">${r.date ? fmtShort(r.date) : "TBC"}</td><td>${escapeHtml(r.track)}${
+          if (r.off) {
+            const label = r.note || r.track || "Off week";
+            return `<tr class="row-off"><td class="mono dim">—</td><td class="dim">OFF</td><td class="mono">${r.date ? fmtShort(r.date) : "—"}</td><td colspan="4" class="dim">${escapeHtml(label)}</td><td class="col-notes"></td></tr>`;
+          }
+          const dist = r.laps != null ? `${r.laps} / ${r.miles}` : "TBC";
+          const phase = r.phase || "";
+          const typ = r.type || "";
+          return `<tr class="${i === nextIdx ? "row-next" : ""}${r.completed ? " row-done" : ""}"><td class="mono">${escapeHtml(r.rd)}</td><td class="muted">${escapeHtml(phase)}</td><td class="mono">${r.date ? fmtShort(r.date) : "TBC"}</td><td>${escapeHtml(r.track)}${
             i === nextIdx ? '<span class="badge badge-next">Next</span>' : ""
-          }${r.note ? `<span class="note-inline">${escapeHtml(r.note)}</span>` : ""}</td><td class="mono">${escapeHtml(dist)}</td><td class="mono ${r.tires && r.tires !== 4 ? "amber-txt" : ""}">${dash(r.tires)}</td><td class="muted col-notes">${escapeHtml(r.note)}</td></tr>`;
+          }${r.completed ? '<span class="badge badge-done">Done</span>' : ""}${r.note ? `<span class="note-inline">${escapeHtml(r.note)}</span>` : ""}</td><td class="muted">${escapeHtml(typ)}</td><td class="mono">${escapeHtml(dist)}</td><td class="mono ${r.tires && r.tires !== 4 ? "amber-txt" : ""}">${dash(r.tires)}</td><td class="muted col-notes">${escapeHtml(r.note || "")}</td></tr>`;
         })
         .join("")}</tbody>`;
   }
@@ -629,8 +634,8 @@
     { id: "cup-schedule", label: "Cup Schedule", tab: "cup" },
     { id: "debriefs", label: "Race Debriefs", tab: "cup" },
     { id: "practice", label: "Practice Plans", tab: "cup" },
-    { id: "trucks", label: "Trucks · Season 14", tab: "trucks" },
-    { id: "trucks-schedule", label: "Trucks · Next Season", tab: "trucks" },
+    { id: "trucks", label: "Trucks · Season 15", tab: "trucks" },
+    { id: "trucks-schedule", label: "Trucks · S15 Schedule", tab: "trucks" },
     { id: "rules", label: "Team Rules", tab: "more" },
     { id: "links", label: "Links", tab: "more" },
   ];
