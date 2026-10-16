@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-14",
+  "updated": "2026-10-16",
   "driver": {
     "name": "Jake M Johnson",
     "custid": "1078383",
@@ -19,19 +19,19 @@
     "series_name": "Bonfire Premier Cup",
     "summary": {
       "position": 18,
-      "points": 247.0,
-      "starts": 9,
+      "points": 269.0,
+      "starts": 10,
       "avg_finish": 15.3,
       "avg_quali": 16.1,
       "top10s": 2,
       "total_incidents": 33,
       "best_finish": 6,
       "chase_cutoff": 12,
-      "gap_to_p12_points": 34.0,
+      "gap_to_p12_points": 43.0,
       "gap_to_p12_positions": 6,
-      "p12_points": 281.0,
-      "p12_driver": "Brenner, David",
-      "note": "SimRacerHub Season 16 as of 2026-10-04: P19, 247 pts (34 behind P12 Brenner, David). Qualcomm race_id 383208 scored (Q8→P12, 0x, +31 pts)."
+      "p12_points": 312.0,
+      "p12_driver": "Zeth Hawley",
+      "note": "SimRacerHub Season 16 as of 2026-10-16: P18, 269 pts (43 behind P12 Zeth Hawley 312). 10 starts — playoff-eligible. Next: Phoenix 2026-10-18."
     },
     "results": [
       {
@@ -435,19 +435,19 @@
     ]
   },
   "trucks": {
-    "season_id": "29499",
-    "season_name": "Season 14",
+    "season_id": "30895",
+    "season_name": "Season 15",
     "series_name": "Big Trucking Tuesday",
     "summary": {
       "position": 15,
-      "starts": 16,
-      "points": 154.0,
+      "starts": 1,
+      "points": 16.0,
       "avg_finish": 21.6,
       "avg_quali": 19.9,
       "top10s": 0,
       "total_incidents": 101,
       "best_finish": 11,
-      "note": "Season 14 complete — no trucks race this weekend; next slate 2026-10-13 Kentucky."
+      "note": "Season 15 after Kentucky R1: P15, 16 pts (Q25→P15, 14x). Next: Daytona 2026-10-20 (80/200, 4 sets)."
     },
     "results": [
       {
@@ -1106,7 +1106,7 @@
     },
     "trucks_next": {
       "next_race": "2026-10-20 Daytona",
-      "this_weekend": false,
+      "this_weekend": true,
       "slate": [
         "Kentucky",
         "Daytona",
@@ -1118,18 +1118,22 @@
         "Michigan",
         "Iowa"
       ],
-      "note": "New Big Trucking Tuesday slate: R1 Kentucky was 2026-10-13 (SimRacerHub Season 15 not published yet as of 2026-10-13 night). Next: 2026-10-20 Daytona 80 laps / 200 mi (4 tire sets), typically 7 / 7:50 PM CST."
+      "note": "Big Trucking Tuesday S15: R1 Kentucky done (Jake Q25→P15, 14x, P15 pts). Next: Tue Oct 20 Daytona 80 laps / 200 mi (4 tire sets), typically 7 / 7:50 PM CST. Target: finish running, under ~8x, stay in the draft without mid-pack wrecks.",
+      "targets": {
+        "finish": "running / top 20 stretch",
+        "incidents": "under ~8x"
+      }
     },
     "links": {
       "garage61": "https://garage61.net/app/drivers/jake-johnson-2",
       "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
-      "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=29499"
+      "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30895"
     },
-    "weekly_focus": "Post-Charlotte Cup (2026-10-11): Q21→P20, 4x, +22 pts (taken out lap 107). Cup P18 / 269 pts — 43 behind playoff cut (P12 Zeth Hawley 312). Start min met (10/10). Next Cup: Phoenix 2026-10-18. Trucks: Kentucky R1 was tonight; next Daytona 2026-10-20.",
+    "weekly_focus": "Race week: Cup Phoenix Sun Oct 18 + Trucks Daytona Tue Oct 20. Cup P18 / 269 pts — 43 behind playoff cut (P12 Zeth Hawley 312). Start min met (10/10). Charlotte takeaway: long-run falloff 1.1–1.5s — Phoenix practice = keep late-stint pace. Trucks: after Kentucky Q25→P15 / 14x, Daytona focus = clean draft + finish.",
     "next_cup": {
       "race_date": "2026-10-18",
       "track": "Phoenix Raceway",
-      "note": "Fuel: confirm in lobby (exactly 1.0 mi; 55% under / 70% over)"
+      "note": "Fuel: confirm in lobby (exactly 1.0 mi; 55% under / 70% over). Apron legal at dogleg."
     },
     "fuel": {
       "updated": "2026-10-11",
@@ -1313,14 +1317,42 @@
       "race_date": "2026-10-18",
       "track": "Phoenix Raceway — ~1-mile oval",
       "series": "Bonfire Premier Cup",
-      "fuel": "Phoenix is exactly 1.0 mi — rule is 55% under 1 mi, 70% over",
+      "fuel": "Phoenix is exactly 1.0 mi — rule is 55% under 1 mi, 70% over; confirm in lobby",
       "apron": "Apron at the dogleg is legal",
+      "targets": {
+        "quali": "top 16",
+        "finish": "top 15 (stretch top 12)",
+        "incidents": "0–2x (chase 0x bonus)"
+      },
       "focus": [
         "30-lap long-run practice stint: keep laps 20–30 within 0.6s of best",
         "Lift earlier and smoother into the corners, with less steering",
-        "Back off once the car starts pushing"
+        "Back off once the car starts pushing — protect the long run"
       ],
+      "cue": "Stay patient mid-pack; don't force a pass that costs you the 0x bonus",
       "why": "Charlotte long-run falloff was 1.1–1.5s late in runs"
+    },
+    "race_week_brief_2026_10_16": {
+      "cup": {
+        "race": "Phoenix, Sun Oct 18",
+        "fuel": "Confirm in lobby (1.0 mi: 55% under / 70% over)",
+        "targets": {
+          "quali": "top 16",
+          "finish": "top 15 (stretch top 12)",
+          "incidents": "0-2x"
+        },
+        "practice": [
+          "30-lap long-run: laps 20–30 within 0.6s of best",
+          "Earlier, smoother lift — less steering mid-corner",
+          "Back off when the car starts pushing"
+        ],
+        "cue": "Patient mid-pack — protect the 0x bonus over a force pass"
+      },
+      "trucks": {
+        "race": "Daytona 80 laps / 200 mi, Tue Oct 20 (4 tire sets)",
+        "target": "finish running, under ~8x, ride the draft clean"
+      },
+      "playoff": "10 of 14 starts met (playoff-eligible). P18 / 269 pts, 43 behind P12 Zeth Hawley (312). 2 regular-season races left (Phoenix, Vegas)."
     }
   },
   "team": {
