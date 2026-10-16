@@ -601,7 +601,7 @@
   // Single-file build inlines window.DASHBOARD_DATA; the hosted build fetches data.json.
   (window.DASHBOARD_DATA
     ? Promise.resolve(window.DASHBOARD_DATA)
-    : fetch("./data.json", { cache: "no-cache" }).then((r) => {
+    : fetch("./data.json?v=" + Date.now(), { cache: "no-cache" }).then((r) => {
         if (!r.ok) throw new Error(`Failed to load data.json (${r.status})`);
         return r.json();
       })
