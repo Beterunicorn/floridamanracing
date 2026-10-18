@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "driver": {
     "name": "Jake M Johnson",
     "custid": "1078383",
@@ -1129,7 +1129,7 @@
       "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
       "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30895"
     },
-    "weekly_focus": "Race week: Cup Phoenix Sun Oct 18 + Trucks Daytona Tue Oct 20. Cup P18 / 269 pts — 43 behind playoff cut (P12 Zeth Hawley 312). Start min met (10/10). Charlotte takeaway: long-run falloff 1.1–1.5s — Phoenix practice = keep late-stint pace. Trucks: after Kentucky Q25→P15 / 14x, Daytona focus = clean draft + finish.",
+    "weekly_focus": "Cup Phoenix done: Jake reported P10 (official SimRacerHub results and points still pending; before Phoenix he was P18, 43 behind the P12 cut). Next: Trucks Daytona Tue Oct 20 (80 laps / 200 mi, 4 sets), focus on a clean draft and finishing. Post-race review: send quali, incidents and a Garage 61 link for the Phoenix debrief.",
     "next_cup": {
       "race_date": "2026-10-18",
       "track": "Phoenix Raceway",
@@ -1330,7 +1330,8 @@
         "Back off once the car starts pushing — protect the long run"
       ],
       "cue": "Stay patient mid-pack; don't force a pass that costs you the 0x bonus",
-      "why": "Charlotte long-run falloff was 1.1–1.5s late in runs"
+      "why": "Charlotte long-run falloff was 1.1–1.5s late in runs",
+      "reported": "Jake reported a P10 finish at Phoenix (Oct 18): a top 10, beating the top-15 target and the stretch top-12 goal. Quali, incidents and Garage 61 data are still pending, and SimRacerHub hadn't posted official results as of 11:40 AM ET."
     },
     "race_week_brief_2026_10_16": {
       "cup": {

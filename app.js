@@ -482,6 +482,7 @@
       brief = `
         <div class="card card-next qc-intro" id="phoenix-focus">
           <div class="card-label">Race week · ${escapeHtml(fmtDow(ph.race_date))} · ${escapeHtml(ph.track)}</div>
+          ${ph.reported ? `<div class="kansas-reported" style="color:var(--text);margin-bottom:0.6rem"><strong>Result:</strong> ${escapeHtml(ph.reported)}</div>` : ""}
           <div class="list-cols">
             <div>
               <div class="subhead">Practice focus</div>
