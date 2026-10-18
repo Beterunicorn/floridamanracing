@@ -18,7 +18,7 @@
     "season_name": "Season 16",
     "series_name": "Bonfire Premier Cup",
     "summary": {
-      "position": 18,
+      "position": 16,
       "points": 269.0,
       "starts": 10,
       "avg_finish": 15.3,
@@ -28,7 +28,7 @@
       "best_finish": 6,
       "chase_cutoff": 12,
       "gap_to_p12_points": 43.0,
-      "gap_to_p12_positions": 6,
+      "gap_to_p12_positions": 4,
       "p12_points": 312.0,
       "p12_driver": "Zeth Hawley",
       "note": "SimRacerHub Season 16 as of 2026-10-16: P18, 269 pts (43 behind P12 Zeth Hawley 312). 10 starts — playoff-eligible. Next: Phoenix 2026-10-18."
@@ -1003,7 +1003,7 @@
   },
   "coaching": {
     "goals": {
-      "cup": "Top-12 playoff (now P18, 43 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
+      "cup": "Top-12 playoff (now P16, 32 pts to cut) via mid-teens finishes and <4 incidents/race; stretch top-5",
       "trucks": "Season 15 underway — R1 Kentucky done (Jake P15). Next: Daytona Tue Oct 20 (80/200, 4 sets). 10 of 13 regular-season starts; clean finishes matter for points-only playoffs."
     },
     "pillars": [
@@ -1314,24 +1314,44 @@
       }
     },
     "phoenix": {
-      "race_date": "2026-10-18",
-      "track": "Phoenix Raceway — ~1-mile oval",
+      "date": "2026-10-18",
       "series": "Bonfire Premier Cup",
-      "fuel": "Phoenix is exactly 1.0 mi — rule is 55% under 1 mi, 70% over; confirm in lobby",
-      "apron": "Apron at the dogleg is legal",
-      "targets": {
-        "quali": "top 16",
-        "finish": "top 15 (stretch top 12)",
-        "incidents": "0–2x (chase 0x bonus)"
-      },
-      "focus": [
-        "30-lap long-run practice stint: keep laps 20–30 within 0.6s of best",
-        "Lift earlier and smoother into the corners, with less steering",
-        "Back off once the car starts pushing — protect the long run"
+      "race_id": "385983",
+      "laps": 129,
+      "field": 26,
+      "winner": "Joseph Vulpis (Q4, led 62)",
+      "notes": [
+        "Jake: Q11 → P10, 129 laps, 0x · +33 pts → P16 in points (302)",
+        "Todd: Q22 → P20, 115 laps, 0x · +23 pts → P23 in points (241)",
+        "Tim: Q24 → P18, 120 laps, 4x · +24 pts → P24 in points (231)",
+        "Playoff cut: P12 David Buelle 334 pts · Jake 32 back with only Las Vegas (Oct 25, regular-season finale) left"
       ],
-      "cue": "Stay patient mid-pack; don't force a pass that costs you the 0x bonus",
-      "why": "Charlotte long-run falloff was 1.1–1.5s late in runs",
-      "reported": "Jake reported a P10 finish at Phoenix (Oct 18): a top 10, beating the top-15 target and the stretch top-12 goal. Quali, incidents and Garage 61 data are still pending, and SimRacerHub hadn't posted official results as of 11:40 AM ET."
+      "g61": {
+        "quali": "26.621",
+        "best_lap": "26.847",
+        "best_lap_no": 89,
+        "laps_note": "130 laps in Garage 61 with overtime (SimRacerHub lists 129 completed)",
+        "stops": [
+          46,
+          87,
+          99
+        ],
+        "stints": [
+          [
+            "First stint (to lap 46)",
+            "+1.21s over 45 laps"
+          ],
+          [
+            "Second stint (laps 47–87)",
+            "+0.76s over 40 laps"
+          ]
+        ]
+      },
+      "takeaways": [
+        "Tire management improved: the second-stint fade was smaller than the first",
+        "Pit around laps 32–35 of a run once you're 1s off your early-run pace",
+        "Restart pace was strong; keep using it"
+      ]
     },
     "race_week_brief_2026_10_16": {
       "cup": {
@@ -1368,24 +1388,24 @@
         "first": "Jake",
         "srh_name": "Jake M Johnson",
         "cup": {
-          "position": 18,
-          "points": 269,
-          "starts": 10,
-          "avg_finish": 15.8,
-          "avg_quali": 16.6,
+          "position": 16,
+          "points": 302,
+          "starts": 11,
+          "avg_finish": 15.3,
+          "avg_quali": 16.1,
           "total_incidents": 37,
-          "inc_per_race": 3.7,
-          "top10s": 2,
+          "inc_per_race": 3.4,
+          "top10s": 3,
           "top5s": 0,
           "wins": 0,
           "best_finish": 6,
           "best_finish_track": "Kansas",
-          "clean_races": 4,
-          "low_inc_races": 5,
+          "clean_races": 5,
+          "low_inc_races": 6,
           "laps_led": 10,
           "disconnects": 0,
           "places_gained_avg": 0.8,
-          "avg_rating": 77.6
+          "avg_rating": 78.1
         },
         "trucks": {
           "position": 15,
@@ -1408,31 +1428,21 @@
           "avg_rating": 65.5
         },
         "playoff": {
-          "starts": 10,
-          "races_run": 12,
-          "races_remaining": 2,
+          "starts": 11,
+          "races_run": 13,
+          "races_remaining": 1,
           "starts_needed": 0,
           "max_starts": 12,
           "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
-          "position": 18,
-          "points": 269,
-          "gap_to_p12": 43,
-          "positions_to_p12": 6,
+          "position": 16,
+          "points": 302,
+          "gap_to_p12": 32,
+          "positions_to_p12": 4,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-27",
-            "track": "Kansas",
-            "quali": 14,
-            "finish": 6,
-            "incidents": 0,
-            "points": 38,
-            "laps_led": 3,
-            "status": "Running"
-          },
           {
             "date": "2026-10-04",
             "track": "Qualcomm Circuit",
@@ -1452,15 +1462,25 @@
             "points": 22,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-18",
+            "track": "Phoenix",
+            "quali": 11,
+            "finish": 10,
+            "incidents": 0,
+            "points": 33,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
-          "2 top-10s; best P6 (Kansas)",
-          "5 of 10 races at 0–2x"
+          "3 top-10s; best P6 (Kansas)",
+          "6 of 11 races at 0–2x"
         ],
         "focus": [
-          "Avg start P16.6 → avg finish P15.8 (+0.8 spots per race)",
-          "Incidents: 3.7x per race (37x total)"
+          "Avg start P16.1 → avg finish P15.3 (+0.8 spots per race)",
+          "Incidents: 3.4x per race (37x total)"
         ]
       },
       {
@@ -1471,23 +1491,23 @@
         "srh_name": "Todd Dunn",
         "cup": {
           "position": 23,
-          "points": 218,
-          "starts": 11,
-          "avg_finish": 22.5,
-          "avg_quali": 25,
+          "points": 241,
+          "starts": 12,
+          "avg_finish": 22.2,
+          "avg_quali": 24.8,
           "total_incidents": 64,
-          "inc_per_race": 5.8,
+          "inc_per_race": 5.3,
           "top10s": 1,
           "top5s": 0,
           "wins": 0,
           "best_finish": 8,
           "best_finish_track": "Daytona",
-          "clean_races": 3,
-          "low_inc_races": 4,
+          "clean_races": 4,
+          "low_inc_races": 5,
           "laps_led": 0,
           "disconnects": 1,
           "places_gained_avg": 2.5,
-          "avg_rating": 63.5
+          "avg_rating": 63.4
         },
         "trucks": {
           "position": 29,
@@ -1510,31 +1530,21 @@
           "avg_rating": 46.0
         },
         "playoff": {
-          "starts": 11,
-          "races_run": 12,
-          "races_remaining": 2,
+          "starts": 12,
+          "races_run": 13,
+          "races_remaining": 1,
           "starts_needed": 0,
           "max_starts": 13,
           "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
           "position": 23,
-          "points": 218,
-          "gap_to_p12": 94,
+          "points": 241,
+          "gap_to_p12": 93,
           "positions_to_p12": 11,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-27",
-            "track": "Kansas",
-            "quali": 23,
-            "finish": 13,
-            "incidents": 0,
-            "points": 30,
-            "laps_led": 0,
-            "status": "Running"
-          },
           {
             "date": "2026-10-04",
             "track": "Qualcomm Circuit",
@@ -1554,16 +1564,26 @@
             "points": 24,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-18",
+            "track": "Phoenix",
+            "quali": 22,
+            "finish": 20,
+            "incidents": 0,
+            "points": 23,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
-          "Avg start P25 → avg finish P22.5 (+2.5 spots per race)",
+          "Avg start P24.8 → avg finish P22.2 (+2.5 spots per race)",
           "1 top-10; best P8 (Daytona)",
-          "4 of 11 races at 0–2x"
+          "5 of 12 races at 0–2x"
         ],
         "focus": [
-          "Incidents: 5.8x per race (64x total)",
-          "Qualifying: avg grid P25",
+          "Incidents: 5.3x per race (64x total)",
+          "Qualifying: avg grid P24.8",
           "1 disconnect this season"
         ]
       },
@@ -1575,12 +1595,12 @@
         "srh_name": "Timothy Darby",
         "cup": {
           "position": 24,
-          "points": 207,
-          "starts": 10,
-          "avg_finish": 21.5,
-          "avg_quali": 28.2,
-          "total_incidents": 84,
-          "inc_per_race": 8.4,
+          "points": 231,
+          "starts": 11,
+          "avg_finish": 21.2,
+          "avg_quali": 27.8,
+          "total_incidents": 88,
+          "inc_per_race": 8.0,
           "top10s": 0,
           "top5s": 0,
           "wins": 0,
@@ -1590,7 +1610,7 @@
           "low_inc_races": 3,
           "laps_led": 0,
           "disconnects": 1,
-          "places_gained_avg": 6.7,
+          "places_gained_avg": 6.6,
           "avg_rating": 58.5
         },
         "trucks": {
@@ -1614,31 +1634,21 @@
           "avg_rating": 37.9
         },
         "playoff": {
-          "starts": 10,
-          "races_run": 12,
-          "races_remaining": 2,
+          "starts": 11,
+          "races_run": 13,
+          "races_remaining": 1,
           "starts_needed": 0,
           "max_starts": 12,
           "start_min_met": true,
           "start_min_possible": true,
           "wins": 0,
           "position": 24,
-          "points": 207,
-          "gap_to_p12": 105,
+          "points": 231,
+          "gap_to_p12": 103,
           "positions_to_p12": 12,
           "in_top12": false
         },
         "last3": [
-          {
-            "date": "2026-09-27",
-            "track": "Kansas",
-            "quali": 27,
-            "finish": 16,
-            "incidents": 12,
-            "points": 26,
-            "laps_led": 0,
-            "status": "Running"
-          },
           {
             "date": "2026-10-04",
             "track": "Qualcomm Circuit",
@@ -1658,15 +1668,25 @@
             "points": 25,
             "laps_led": 0,
             "status": "Running"
+          },
+          {
+            "date": "2026-10-18",
+            "track": "Phoenix",
+            "quali": 24,
+            "finish": 18,
+            "incidents": 4,
+            "points": 24,
+            "laps_led": 0,
+            "status": "Running"
           }
         ],
         "strengths": [
-          "Avg start P28.2 → avg finish P21.5 (+6.7 spots per race)",
-          "3 of 10 races at 0–2x"
+          "Avg start P27.8 → avg finish P21.2 (+6.6 spots per race)",
+          "3 of 11 races at 0–2x"
         ],
         "focus": [
-          "Incidents: 8.4x per race (84x total)",
-          "Qualifying: avg grid P28.2",
+          "Incidents: 8.0x per race (88x total)",
+          "Qualifying: avg grid P27.8",
           "1 disconnect this season"
         ]
       }
@@ -1676,37 +1696,33 @@
       "season_name": "Season 16",
       "season_id": "30123",
       "field_size": 48,
-      "races_run": 12,
+      "races_run": 13,
       "regular_season_races": 14,
       "regular_season_remaining": [
-        {
-          "date": "2026-10-18",
-          "track": "Phoenix"
-        },
         {
           "date": "2026-10-25",
           "track": "Las Vegas"
         }
       ],
       "p12": {
-        "name": "Zeth Hawley",
-        "points": 312
+        "name": "David Buelle",
+        "points": 334
       },
       "leader": {
         "name": "Joseph Vulpis",
-        "points": 437
+        "points": 485
       },
       "winners_outside_top12": [
         {
           "name": "Jared Kelly2",
-          "position": 15,
+          "position": 19,
           "wins": 1,
           "starts": 8,
-          "can_reach_10_starts": true
+          "can_reach_10_starts": false
         },
         {
           "name": "Paul Ferdiani",
-          "position": 19,
+          "position": 21,
           "wins": 1,
           "starts": 11,
           "can_reach_10_starts": true
@@ -2100,6 +2116,40 @@
               "status": "Running"
             }
           }
+        },
+        {
+          "race_id": "385983",
+          "date": "2026-10-18",
+          "track": "Phoenix",
+          "track_full": "Phoenix Raceway",
+          "event": null,
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 11,
+              "finish": 10,
+              "incidents": 0,
+              "points": 33,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 22,
+              "finish": 20,
+              "incidents": 0,
+              "points": 23,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 24,
+              "finish": 18,
+              "incidents": 4,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
         }
       ],
       "schedule": [
@@ -2466,11 +2516,36 @@
         },
         {
           "date": "2026-10-18",
-          "race_id": null,
+          "race_id": "385983",
           "chase": false,
           "event": "Phoenix",
           "track_full": "Phoenix Raceway",
-          "team": null
+          "team": {
+            "jake": {
+              "quali": 11,
+              "finish": 10,
+              "incidents": 0,
+              "points": 33,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 22,
+              "finish": 20,
+              "incidents": 0,
+              "points": 23,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 24,
+              "finish": 18,
+              "incidents": 4,
+              "points": 24,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
         },
         {
           "date": "2026-10-25",
@@ -2857,12 +2932,11 @@
       {
         "series": "Cup",
         "series_name": "Bonfire Premier Cup",
-        "date": "2026-10-18",
-        "track": "Phoenix Raceway",
+        "date": "2026-10-25",
+        "track": "Las Vegas Motor Speedway",
         "facts": [
-          "Race 13 of 14 (regular season)",
-          "Fuel: confirm in lobby (exactly 1.0 mi; 55% under 1 mi / 70% over)",
-          "Apron legal at the dogleg",
+          "Race 14 of 14 · regular-season finale",
+          "Fuel: 70% start (oval over 1 mi)",
           "4 extra tire sets"
         ]
       },

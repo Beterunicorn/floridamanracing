@@ -422,12 +422,42 @@
       </div>`;
   }
 
+  function phoenixDebrief(data) {
+    const c = data.coaching.phoenix;
+    if (!c) return "";
+    const g = c.g61;
+    return `
+      <div class="debrief" id="debrief-phoenix">
+        <h3 class="sub-title">Phoenix <span class="muted">· ${fmtDate(c.date)} · ${escapeHtml(c.series)} · ${c.laps} laps · ${c.field} starters</span></h3>
+        ${teamStrip(data.team, c.race_id)}
+        <div class="kansas-grid">
+          <div class="card">
+            <div class="card-label">Team debrief · winner ${escapeHtml(c.winner)}</div>
+            <ul class="check-list">${c.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul>
+          </div>
+          <div class="card">
+            <div class="card-label">Jake · Garage 61 race data</div>
+            <div class="g61-stats">
+              <div class="g61-stat"><span class="stat-val mono">${escapeHtml(g.quali)}</span><span class="stat-lbl">Quali lap</span></div>
+              <div class="g61-stat"><span class="stat-val mono green">${escapeHtml(g.best_lap)}</span><span class="stat-lbl">Best race lap · lap ${g.best_lap_no}</span></div>
+            </div>
+            <p class="muted" style="font-size:0.8rem;margin-bottom:0.85rem">${escapeHtml(g.laps_note)} · stops on laps ${g.stops.join(" / ")}</p>
+            <div class="subhead">Stint fade</div>
+            <ul class="form-list">${g.stints.map(([a, b]) => `<li><span class="form-track">${escapeHtml(a)}</span><span class="mono">${escapeHtml(b)}</span></li>`).join("")}</ul>
+            <div class="subhead" style="margin-top:0.9rem">Takeaways</div>
+            <ul class="check-list">${c.takeaways.map((t) => `<li>${escapeHtml(t)}</li>`).join("")}</ul>
+          </div>
+        </div>
+      </div>`;
+  }
+
   function renderDebriefs(data) {
     const k = data.coaching.kansas;
     const q = data.coaching.qualcomm;
     document.getElementById("debriefs-meta").textContent = "Most recent Cup races · team results, then notes";
     const kd = data.team.trucks && data.team.trucks.debrief;
     document.getElementById("debriefs-block").innerHTML = `
+      ${phoenixDebrief(data)}
       ${kd ? `<div class="debrief" id="debrief-kentucky">
         <h3 class="sub-title">Kentucky <span class="muted">· ${fmtDate(kd.date)} · ${escapeHtml(data.team.trucks.series_name)} · ${kd.laps} laps (${kd.scheduled_laps} sched.) · ${kd.field} starters</span></h3>
         <div class="card"><div class="card-label">Team debrief · winner ${escapeHtml(kd.winner)}</div>
