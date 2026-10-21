@@ -451,18 +451,48 @@
       </div>`;
   }
 
+  function trucksStrip(team, raceId) {
+    const r = (team.trucks.results || []).find((x) => x.race_id === raceId);
+    if (!r) return "";
+    return `<div class="team-strip">${team.drivers
+      .map((d) => {
+        const x = r.drivers[d.key];
+        return `<div class="strip-tile"><div class="strip-name">${dot(d)}${escapeHtml(d.first)}</div>${
+          x
+            ? `<div class="strip-res mono"><span class="${x.finish <= 10 ? "finish-top10" : ""}">P${x.finish}</span> <span class="dim">from Q${x.quali}</span></div>
+               <div class="strip-meta mono"><span class="${incClass(x.incidents)}">${x.incidents}x</span> · +${x.points} pts${x.laps_led ? ` · ${x.laps_led} led` : ""}</div>`
+            : '<div class="strip-res dim">Did not start</div>'
+        }</div>`;
+      })
+      .join("")}</div>`;
+  }
+
+  function trucksDebrief(data, kd) {
+    const t = data.team.trucks;
+    const hasJake = kd.jake_report && kd.jake_report.length;
+    const teamCard = `<div class="card"><div class="card-label">Team debrief · winner ${escapeHtml(kd.winner)}</div>
+          ${kd.summary ? `<p class="muted" style="font-size:0.8rem;margin-bottom:0.6rem">${escapeHtml(kd.summary)}</p>` : ""}
+          <ul class="check-list">${kd.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul></div>`;
+    return `<div class="debrief" id="debrief-${escapeHtml(kd.id || kd.track.toLowerCase())}">
+        <h3 class="sub-title">${escapeHtml(kd.track)} <span class="muted">· ${fmtDate(kd.date)} · ${escapeHtml(t.series_name)} · ${kd.laps} laps${kd.scheduled_laps && kd.scheduled_laps !== kd.laps ? ` (${kd.scheduled_laps} sched.)` : ""} · ${kd.field} starters</span></h3>
+        ${kd.race_id ? trucksStrip(data.team, kd.race_id) : ""}
+        ${hasJake ? `<div class="kansas-grid">${teamCard}
+          <div class="card"><div class="card-label">Jake · driver report</div>
+            <ul class="check-list">${kd.jake_report.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul>
+            ${kd.takeaways ? `<div class="subhead" style="margin-top:0.9rem">Takeaways</div><ul class="check-list">${kd.takeaways.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul>` : ""}
+          </div></div>` : teamCard}
+      </div>`;
+  }
+
   function renderDebriefs(data) {
     const k = data.coaching.kansas;
     const q = data.coaching.qualcomm;
-    document.getElementById("debriefs-meta").textContent = "Most recent Cup races · team results, then notes";
-    const kd = data.team.trucks && data.team.trucks.debrief;
+    document.getElementById("debriefs-meta").textContent = "Most recent Cup & Trucks races · team results, then notes";
+    const tds = (data.team.trucks && data.team.trucks.debriefs) || [];
     document.getElementById("debriefs-block").innerHTML = `
+      ${tds.slice(0, 1).map((t) => trucksDebrief(data, t)).join("")}
       ${phoenixDebrief(data)}
-      ${kd ? `<div class="debrief" id="debrief-kentucky">
-        <h3 class="sub-title">Kentucky <span class="muted">· ${fmtDate(kd.date)} · ${escapeHtml(data.team.trucks.series_name)} · ${kd.laps} laps (${kd.scheduled_laps} sched.) · ${kd.field} starters</span></h3>
-        <div class="card"><div class="card-label">Team debrief · winner ${escapeHtml(kd.winner)}</div>
-        <ul class="check-list">${kd.notes.map((n) => `<li>${escapeHtml(n)}</li>`).join("")}</ul></div>
-      </div>` : ""}
+      ${tds.slice(1).map((t) => trucksDebrief(data, t)).join("")}
       ${charlotteDebrief(data)}
       <div class="debrief">
         <h3 class="sub-title">Qualcomm Circuit <span class="muted">· ${fmtDate(q.race_date)} · ${escapeHtml(data.team.cup.series_name)}</span></h3>

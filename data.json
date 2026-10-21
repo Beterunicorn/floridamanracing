@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-21",
   "driver": {
     "name": "Jake M Johnson",
     "custid": "1078383",
@@ -440,14 +440,14 @@
     "series_name": "Big Trucking Tuesday",
     "summary": {
       "position": 15,
-      "starts": 1,
-      "points": 16.0,
+      "starts": 2,
+      "points": 27,
       "avg_finish": 21.6,
       "avg_quali": 19.9,
       "top10s": 0,
       "total_incidents": 101,
       "best_finish": 11,
-      "note": "Season 15 after Kentucky R1: P15, 16 pts (Q25→P15, 14x). Next: Daytona 2026-10-20 (80/200, 4 sets)."
+      "note": "Season 15 after Daytona R2: P15, 27 pts (Daytona Q13→P20, 8x, +11). Next: North Wilkesboro 2026-10-27 (150/93.75, 4 sets)."
     },
     "results": [
       {
@@ -1105,7 +1105,7 @@
       "status": "race complete — coach debrief pending"
     },
     "trucks_next": {
-      "next_race": "2026-10-20 Daytona",
+      "next_race": "2026-10-27 North Wilkesboro",
       "this_weekend": true,
       "slate": [
         "Kentucky",
@@ -1118,9 +1118,9 @@
         "Michigan",
         "Iowa"
       ],
-      "note": "Big Trucking Tuesday S15: R1 Kentucky done (Jake Q25→P15, 14x, P15 pts). Next: Tue Oct 20 Daytona 80 laps / 200 mi (4 tire sets), typically 7 / 7:50 PM CST. Target: finish running, under ~8x, stay in the draft without mid-pack wrecks.",
+      "note": "Big Trucking Tuesday S15: R2 Daytona done (Jake Q13→P20, 8x, P15 pts, 27). Next: Tue Oct 27 North Wilkesboro 150 laps / 93.75 mi (4 tire sets). Short track: qualify well, stay under ~8x.",
       "targets": {
-        "finish": "running / top 20 stretch",
+        "finish": "top 15",
         "incidents": "under ~8x"
       }
     },
@@ -1409,12 +1409,12 @@
         },
         "trucks": {
           "position": 15,
-          "points": 16,
-          "starts": 1,
-          "avg_finish": 15,
-          "avg_quali": 25,
-          "total_incidents": 14,
-          "inc_per_race": 14.0,
+          "points": 27,
+          "starts": 2,
+          "avg_finish": 17.5,
+          "avg_quali": 19,
+          "total_incidents": 22,
+          "inc_per_race": 11.0,
           "top10s": 0,
           "top5s": 0,
           "wins": 0,
@@ -1424,8 +1424,8 @@
           "low_inc_races": 0,
           "laps_led": 0,
           "disconnects": 0,
-          "places_gained_avg": 10,
-          "avg_rating": 65.5
+          "places_gained_avg": 1.5,
+          "avg_rating": 56.2
         },
         "playoff": {
           "starts": 11,
@@ -1510,13 +1510,13 @@
           "avg_rating": 63.4
         },
         "trucks": {
-          "position": 29,
-          "points": 2,
-          "starts": 1,
+          "position": 36,
+          "points": 4,
+          "starts": 2,
           "avg_finish": 29,
-          "avg_quali": 37,
-          "total_incidents": 27,
-          "inc_per_race": 27.0,
+          "avg_quali": 37.5,
+          "total_incidents": 45,
+          "inc_per_race": 22.5,
           "top10s": 0,
           "top5s": 0,
           "wins": 0,
@@ -1526,8 +1526,8 @@
           "low_inc_races": 0,
           "laps_led": 0,
           "disconnects": 0,
-          "places_gained_avg": 8,
-          "avg_rating": 46.0
+          "places_gained_avg": 8.5,
+          "avg_rating": 49.8
         },
         "playoff": {
           "starts": 12,
@@ -1614,13 +1614,13 @@
           "avg_rating": 58.5
         },
         "trucks": {
-          "position": 31,
-          "points": 1,
-          "starts": 1,
-          "avg_finish": 33,
+          "position": 38,
+          "points": 2,
+          "starts": 2,
+          "avg_finish": 37.5,
           "avg_quali": 39,
-          "total_incidents": 26,
-          "inc_per_race": 26.0,
+          "total_incidents": 39,
+          "inc_per_race": 19.5,
           "top10s": 0,
           "top5s": 0,
           "wins": 0,
@@ -1630,8 +1630,8 @@
           "low_inc_races": 0,
           "laps_led": 0,
           "disconnects": 0,
-          "places_gained_avg": 6,
-          "avg_rating": 37.9
+          "places_gained_avg": 1.5,
+          "avg_rating": 38.0
         },
         "playoff": {
           "starts": 11,
@@ -2641,8 +2641,52 @@
       "series_name": "Big Trucking Tuesday",
       "season_name": "Season 15",
       "season_id": "30895",
-      "field_size": 45,
-      "status": "Season 15 · R1 Kentucky complete",
+      "field_size": 49,
+      "status": "Season 15 · R2 Daytona complete",
+      "debriefs": [
+        {
+          "id": "daytona",
+          "track": "Daytona",
+          "date": "2026-10-20",
+          "race_id": "386577",
+          "laps": 89,
+          "scheduled_laps": 80,
+          "field": 44,
+          "winner": "Matt Novella (Q42, led 17)",
+          "summary": "Green-white-checkered overtime finish · most laps led: Jaron Valley (42) · 11 leaders, 17 lead changes · 6 cautions (18 laps)",
+          "notes": [
+            "Jake: Q13 → P20, 89 laps, 8x · +11 pts → P15 (tied) in points (27)",
+            "Todd: Q38 → P29, 88 laps, 18x · +2 pts → P36 in points (4)",
+            "Tim: Q39 → P42, 79 laps, 13x · +1 pt → P38 (tied) in points (2)"
+          ],
+          "jake_report": [
+            "Ran clean and stayed out of trouble until lap 79, when a wreck broke out right in front and he got ping-ponged; the race then went to a green-white-checkered overtime (89 laps)",
+            "Truck felt good all race",
+            "Fuel saving worked: about 1 gallon left at the checkered flag even after the overtime (78% start fuel)"
+          ],
+          "takeaways": [
+            "Pace and fuel were fine; the late wreck cost the finish",
+            "Keep the fuel-save plan for Talladega (R13), and leave margin for a GWC finish",
+            "Next up is North Wilkesboro, a short track: qualifying and staying under ~8x matter more than the draft"
+          ]
+        },
+        {
+          "id": "kentucky",
+          "track": "Kentucky",
+          "date": "2026-10-13",
+          "race_id": "385243",
+          "laps": 156,
+          "scheduled_laps": 150,
+          "field": 45,
+          "winner": "Zachary Beeckman (Q4, led 39)",
+          "notes": [
+            "Jake: Q25 → P15, all 156 laps, 14x · +16 pts, P15 in points (tied)",
+            "Todd: Q37 → P29, 155 laps, 27x · +2 pts",
+            "Tim: Q39 → P33, 153 laps, 26x · +1 pt",
+            "Team takeaway: everyone finished running, but 67x combined — cleaner races and better qualifying are the Daytona focus"
+          ]
+        }
+      ],
       "debrief": {
         "track": "Kentucky",
         "date": "2026-10-13",
@@ -2691,6 +2735,40 @@
               "status": "Running"
             }
           }
+        },
+        {
+          "race_id": "386577",
+          "date": "2026-10-20",
+          "track": "Daytona",
+          "track_full": "Daytona International Speedway",
+          "event": "Round Two @ Daytona",
+          "chase": false,
+          "drivers": {
+            "jake": {
+              "quali": 13,
+              "finish": 20,
+              "incidents": 8,
+              "points": 11,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "todd": {
+              "quali": 38,
+              "finish": 29,
+              "incidents": 18,
+              "points": 2,
+              "laps_led": 0,
+              "status": "Running"
+            },
+            "tim": {
+              "quali": 39,
+              "finish": 42,
+              "incidents": 13,
+              "points": 1,
+              "laps_led": 0,
+              "status": "Running"
+            }
+          }
         }
       ],
       "next_season_rules": "13-race regular season · 10 of 13 starts required · playoffs on points only (12→8→4→championship)",
@@ -2716,7 +2794,8 @@
           "laps": 80,
           "miles": 200,
           "tires": 4,
-          "note": ""
+          "note": "Completed (89 laps, GWC overtime)",
+          "completed": true
         },
         {
           "rd": "R3",
@@ -2943,12 +3022,12 @@
       {
         "series": "Trucks",
         "series_name": "Big Trucking Tuesday",
-        "date": "2026-10-20",
+        "date": "2026-10-27",
         "day": "Tue",
-        "track": "Daytona International Speedway",
+        "track": "North Wilkesboro Speedway",
         "facts": [
-          "New season · Round 2",
-          "80 laps / 200 mi",
+          "Season 15 · Round 3",
+          "150 laps / 93.75 mi",
           "4 tire sets"
         ]
       }
