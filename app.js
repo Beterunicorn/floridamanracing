@@ -535,14 +535,15 @@
 
   function renderPractice(data) {
     const q = data.coaching.qualcomm;
-    const ph = data.coaching.phoenix;
+    const ph = data.coaching.race_week;
     document.getElementById("practice-meta").textContent = "Next race focus, plus the earlier race-week plan";
     let brief = "";
-    if (ph) {
+    if (ph && ph.focus) {
+      const t = ph.targets || {};
       brief = `
-        <div class="card card-next qc-intro" id="phoenix-focus">
+        <div class="card card-next qc-intro" id="race-week-focus">
           <div class="card-label">Race week · ${escapeHtml(fmtDow(ph.race_date))} · ${escapeHtml(ph.track)}</div>
-          ${ph.reported ? `<div class="kansas-reported" style="color:var(--text);margin-bottom:0.6rem"><strong>Result:</strong> ${escapeHtml(ph.reported)}</div>` : ""}
+          ${ph.targets ? `<div class="qc-targets" style="margin-bottom:0.6rem"><strong>Targets:</strong> quali ${escapeHtml(t.quali || "")} · finish ${escapeHtml(t.finish || "")} · incidents ${escapeHtml(t.incidents || "")}</div>` : ""}
           <div class="list-cols">
             <div>
               <div class="subhead">Practice focus</div>
@@ -555,6 +556,8 @@
               <p class="qc-focus">${escapeHtml(ph.apron)}</p>
             </div>
           </div>
+          ${ph.cue ? `<div class="qc-focus" style="margin-top:0.6rem"><strong>Race-craft cue:</strong> ${escapeHtml(ph.cue)}</div>` : ""}
+          ${ph.playoff ? `<div class="card-note">Playoff picture: ${escapeHtml(ph.playoff)}</div>` : ""}
           <div class="card-note">Why: ${escapeHtml(ph.why)} (Jake's Garage 61 data).</div>
         </div>`;
     }

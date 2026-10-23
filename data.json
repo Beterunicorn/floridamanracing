@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-23",
   "driver": {
     "name": "Jake M Johnson",
     "custid": "1078383",
@@ -1129,11 +1129,11 @@
       "cup_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30123",
       "trucks_simracerhub": "https://simracerhub.com/get_standings.php?season_id=30895"
     },
-    "weekly_focus": "Cup Phoenix done: Jake reported P10 (official SimRacerHub results and points still pending; before Phoenix he was P18, 43 behind the P12 cut). Next: Trucks Daytona Tue Oct 20 (80 laps / 200 mi, 4 sets), focus on a clean draft and finishing. Post-race review: send quali, incidents and a Garage 61 link for the Phoenix debrief.",
+    "weekly_focus": "Cup Las Vegas Sun Oct 25 is the regular-season finale: Jake P16, 32 behind the P12 cut, so it's win-or-top-3 territory. Practice long-run pace, qualifying and restarts. Trucks North Wilkesboro Tue Oct 27: qualify well and stay under ~8x.",
     "next_cup": {
-      "race_date": "2026-10-18",
-      "track": "Phoenix Raceway",
-      "note": "Fuel: confirm in lobby (exactly 1.0 mi; 55% under / 70% over). Apron legal at dogleg."
+      "race_date": "2026-10-25",
+      "track": "Las Vegas Motor Speedway",
+      "note": "Fuel 70% (oval over 1 mi). Apron legal. Regular-season finale."
     },
     "fuel": {
       "updated": "2026-10-11",
@@ -1374,6 +1374,47 @@
         "target": "finish running, under ~8x, ride the draft clean"
       },
       "playoff": "10 of 14 starts met (playoff-eligible). P18 / 269 pts, 43 behind P12 Zeth Hawley (312). 2 regular-season races left (Phoenix, Vegas)."
+    },
+    "race_week": {
+      "race_date": "2026-10-25",
+      "track": "Las Vegas Motor Speedway (1.5 mi), regular-season finale",
+      "focus": [
+        "Long-run: 25–30 lap stints, laps 20–30 within 0.6s of your best (Charlotte fade was 1.1–1.5s)",
+        "Quali: 4–6 lone 2-lap runs; commit to the T1 entry, nail lap 1, make lap 2 a repeat",
+        "Restarts: launch and lane choice; stay in file to the S/F line"
+      ],
+      "fuel": "70% start fuel (oval over 1 mi). Charlotte burn was about 0.30–0.33 gal/lap on 14 gal, roughly 44 laps a tank; confirm Vegas burn in practice.",
+      "apron": "Legal at Las Vegas (no yellow line).",
+      "targets": {
+        "quali": "top 10",
+        "finish": "top 5 (a win is an automatic playoff berth)",
+        "incidents": "0x for the bonus"
+      },
+      "cue": "Bank bonus points: lead a lap if a pit cycle or restart offers it, but never trade the 0x bonus for a risky pass before the final run.",
+      "playoff": "P16, 302 pts, 32 behind P12 David Buelle (334), with JZ Bennett 322, Steven Neal 320 and Michael Sarra 310 in between. Paul Ferdiani (P21) has a win and 11 starts, which could take a playoff spot. Realistically Jake needs a win, or a top-3 with the drivers ahead having a bad day.",
+      "why": "Phoenix showed the fix is working (second-stint fade 0.76s vs 1.21s in the first) and Charlotte, the closest 1.5-mile comparison, was lost to long-run falloff"
+    },
+    "race_week_brief_2026_10_23": {
+      "cup": {
+        "race": "Las Vegas, Sun Oct 25 (regular-season finale)",
+        "fuel": "70%",
+        "targets": {
+          "quali": "top 10",
+          "finish": "top 5 (a win is an automatic playoff berth)",
+          "incidents": "0x for the bonus"
+        },
+        "practice": [
+          "Long-run: 25–30 lap stints, laps 20–30 within 0.6s of your best (Charlotte fade was 1.1–1.5s)",
+          "Quali: 4–6 lone 2-lap runs; commit to the T1 entry, nail lap 1, make lap 2 a repeat",
+          "Restarts: launch and lane choice; stay in file to the S/F line"
+        ],
+        "cue": "Bank bonus points: lead a lap if a pit cycle or restart offers it, but never trade the 0x bonus for a risky pass before the final run."
+      },
+      "trucks": {
+        "race": "North Wilkesboro 150 laps / 93.75 mi, Tue Oct 27 (4 tire sets)",
+        "target": "qualify well, top 15, under ~8x"
+      },
+      "playoff": "P16, 302 pts, 32 behind P12 David Buelle (334), with JZ Bennett 322, Steven Neal 320 and Michael Sarra 310 in between. Paul Ferdiani (P21) has a win and 11 starts, which could take a playoff spot. Realistically Jake needs a win, or a top-3 with the drivers ahead having a bad day."
     }
   },
   "team": {
